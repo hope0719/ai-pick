@@ -68,6 +68,14 @@ svg{display:block}
   border:1px solid #0000;border-radius:7px;padding:8px 14px;transition:transform .15s,box-shadow .15s;
 }
 .gh-link:hover{transform:translateY(-1px);box-shadow:var(--shadow-soft)}
+.token-link{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:13px;font-weight:700;color:#be570f;
+  background:var(--amber-soft);
+  border:1px solid #d96f1640;border-radius:7px;padding:8px 14px;transition:transform .15s,box-shadow .15s,background .15s;
+}
+.token-link svg{flex:none}
+.token-link:hover{transform:translateY(-1px);box-shadow:0 4px 12px #d96f1633;background:#ffe6b8}
 
 /* ---------- Hero ---------- */
 .home-hero{
