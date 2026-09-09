@@ -30,6 +30,8 @@ const SNAP_PATH = 'src/data/snapshot.json';
 const LUC_APP = 'N2H8bkae1aBvULsrBedc1TtGnBd';
 const LUC_TBL = 'tblbwA8TGM8eHLRA';
 const LUC_KEEP_STATUS = ['进行中', '长期', '待参加', '等待结果']; // 剔除 结束 / 结束且差评
+const LUC_BLOCKLIST_IDS = ['recvu9WTrZHBEM']; // 已下架 / 用户要求剔除（飞书源状态未更新时强制跳过）
+const LUC_BLOCKLIST_TITLES = ['SkillHub 线上挑战赛'];
 
 // —— 枚举 → 中文（对齐上游 enums.ts 的 zh label，与已上线 data.json 一致）——
 const TYPE_ZH = { hackathon: '黑客松', 'dev-challenge': '开发挑战', 'dev-incentive': '开发激励', 'ai-competition': 'AI竞赛', 'beta-access': '内测资格', benefit: '权益福利', 'content-creation': '内容创作', other: '其他' };
@@ -254,7 +256,10 @@ function main() {
     mappedLuc = rawLuc
       .filter(r => {
         const st = Array.isArray(r['状态']) ? r['状态'][0] : (r['状态'] || '');
-        return LUC_KEEP_STATUS.includes(st);
+        if (!LUC_KEEP_STATUS.includes(st)) return false;
+        if (LUC_BLOCKLIST_IDS.includes(r.record_id)) return false;
+        if (LUC_BLOCKLIST_TITLES.includes(r['活动标题'])) return false;
+        return true;
       })
       .map(mapLucRecord);
     console.log(`✓ LucianaiB 表拉取成功：${rawLuc.length} 条，保留非结束 ${mappedLuc.length} 条`);
