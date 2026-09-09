@@ -1,8 +1,8 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-09-09T15:06:30.197Z",
-  "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 35 条",
+  "updated_at": "2026-09-09T16:00:50.178Z",
+  "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 34 条",
   "activities": [
     {
       "id": "recvn947P1uKeP",
@@ -5194,7 +5194,7 @@
       "difficulty": null,
       "difficultyNote": null,
       "reward": "",
-      "rewardDetail": "[https://cloud.tencent.com/developer/article/2736710](https://cloud.tencent.com/developer/article/2736710)[https://blog.csdn.net/lwcwam/article/details/164338584](https://blog.csdn.net/lwcwam/article/details/164338584)[https://zhuanlan.zhihu.com/p/2078916247819965903](https://zhuanlan.zhihu.com/p/2078916247819965903)[https://juejin.cn/post/7681161304782602278](https://juejin.cn/post/7681161304782602278)[https://page.om.qq.com/page/O1y7MroFJ-AU10GzJVS1uH5w0](https://page.om.qq.com/page/O1y7MroFJ-AU10GzJVS1uH5w0)[https://cloud.tencent.com/developer/article/2735281](https://cloud.tencent.com/developer/article/2735281)",
+      "rewardDetail": "[https://cloud.tencent.com/developer/article/2736710](https://cloud.tencent.com/developer/article/2736710)[https://blog.csdn.net/lwcwam/article/details/164338584](https://blog.csdn.net/lwcwam/article/details/164338584)[https://zhuanlan.zhihu.com/p/2078916247819965903](https://zhuanlan.zhihu.com/p/2078916247819965903)[https://juejin.cn/post/7681161304782602278](https://juejin.cn/post/7681161304782602278)[https://page.om.qq.com/page/O1y7MroFJ-AU10GzJVS1uH5w0](https://page.om.qq.com/page/O1y7MroFJ-AU10GzJVS1uH5w0)",
       "rewardTypes": [],
       "format": null,
       "participation": null,
