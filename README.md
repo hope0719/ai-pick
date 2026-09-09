@@ -2,9 +2,8 @@
 
 > 在时间截止前找到 AI 机会
 
-**在线地址：** https://hope0719.github.io/ai-pick/
-
-**代码仓库：** https://github.com/hope0719/ai-pick
+- **在线预览：** https://hope0719.github.io/ai-pick/
+- **源码仓库：** https://github.com/hope0719/ai-pick
 
 ---
 
