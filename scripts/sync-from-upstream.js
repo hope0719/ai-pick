@@ -34,8 +34,8 @@ const LUC_KEEP_STATUS = ['进行中', '长期', '待参加', '等待结果']; //
 const JB_BLOCKLIST_IDS = ['recvqRXpBMVKBC'];
 const JB_BLOCKLIST_TITLES = ['外滩大会 - 黑客松2026 · AI Coding大赛'];
 // LucianaiB 源黑名单（已下架 / 用户要求剔除，飞书源状态未更新时强制跳过）
-const LUC_BLOCKLIST_IDS = ['recvu9WTrZHBEM'];
-const LUC_BLOCKLIST_TITLES = ['SkillHub 线上挑战赛'];
+const LUC_BLOCKLIST_IDS = ['recvu9WTrZHBEM', 'luc_recvsP0ON1KFbi'];
+const LUC_BLOCKLIST_TITLES = ['SkillHub 线上挑战赛', '飞书 AI 绝活大会'];
 
 // —— 枚举 → 中文（对齐上游 enums.ts 的 zh label，与已上线 data.json 一致）——
 const TYPE_ZH = { hackathon: '黑客松', 'dev-challenge': '开发挑战', 'dev-incentive': '开发激励', 'ai-competition': 'AI竞赛', 'beta-access': '内测资格', benefit: '权益福利', 'content-creation': '内容创作', other: '其他' };
