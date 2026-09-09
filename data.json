@@ -1,7 +1,7 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-09-09T09:21:05.839Z",
+  "updated_at": "2026-09-09T09:23:27.992Z",
   "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 24 条",
   "activities": [
     {
@@ -5155,33 +5155,6 @@
       "source": "lucianaib",
       "estimatedEffort": null,
       "suggestion": "worth-doing",
-      "discoveredAt": null,
-      "slug": null
-    },
-    {
-      "id": "luc_recvtkjt2XuJfK",
-      "title": "智见价值：寻找100位财报价值捕手",
-      "vendor": "",
-      "type": "其他",
-      "score": 0,
-      "difficulty": null,
-      "difficultyNote": null,
-      "reward": "",
-      "rewardDetail": "[https://page.om.qq.com/page/O1y7MroFJ-AU10GzJVS1uH5w0](https://page.om.qq.com/page/O1y7MroFJ-AU10GzJVS1uH5w0)",
-      "rewardTypes": [],
-      "format": null,
-      "participation": null,
-      "winningCriteria": null,
-      "timelineNotes": null,
-      "startAt": "2026-09-10T00:00:00.000+08:00",
-      "endAt": null,
-      "deadline_date": null,
-      "region": "其他",
-      "officialStatus": "",
-      "url": "https://om.qq.com/main/feature/crowdDetail?id=5608277",
-      "source": "lucianaib",
-      "estimatedEffort": null,
-      "suggestion": "watch",
       "discoveredAt": null,
       "slug": null
     },
