@@ -1,8 +1,8 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-09-09T09:05:51.377Z",
-  "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 25 条",
+  "updated_at": "2026-09-09T09:07:02.154Z",
+  "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 24 条",
   "activities": [
     {
       "id": "recvn947P1uKeP",
@@ -5319,36 +5319,6 @@
       "suggestion": "worth-doing",
       "discoveredAt": null,
       "slug": null
-    },
-    {
-      "id": "recvqRXpBMVKBC",
-      "title": "外滩大会 - 黑客松2026 · AI Coding大赛",
-      "vendor": "其他",
-      "type": "黑客松",
-      "score": 4,
-      "difficulty": 2,
-      "difficultyNote": "首个面向全民不限编程方式的AI Coding大赛，零基础可参加。10个赛道(阿里云百炼/扣子/蚂蚁灵光/百度秒哒/秒悟/QMuse/Qoder/吐司/WeaveFox/小浣熊)",
-      "reward": "专业奖(一二三等奖共26名)+小红书人气奖100名+各赛道专属奖池/流量扶持/会员权益",
-      "rewardDetail": "专业奖(一二三等奖共26名)+小红书人气奖100名+各赛道专属奖池/流量扶持/会员权益",
-      "rewardTypes": [
-        "奖金"
-      ],
-      "format": "线上+外滩大会现场颁奖(9月12日)",
-      "participation": null,
-      "winningCriteria": null,
-      "timelineNotes": "线上比赛→专业评审+人气奖→公布名单→9月12日外滩大会颁奖",
-      "startAt": null,
-      "endAt": null,
-      "deadline_date": null,
-      "region": "中国",
-      "officialStatus": "官方确认",
-      "url": "https://hackathon2026.app.weavefox.cn/",
-      "source": null,
-      "estimatedEffort": "1-3天",
-      "suggestion": "立即行动",
-      "discoveredAt": "2026-07-29T16:00:00.000Z",
-      "slug": "2026-ai-coding",
-      "image": "event-pass-macro.png"
     },
     {
       "id": "dy-mtcgttis-0",
