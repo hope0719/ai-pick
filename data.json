@@ -1,7 +1,7 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-09-09T08:56:54.818Z",
+  "updated_at": "2026-09-09T16:58:03+08:00",
   "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 25 条",
   "activities": [
     {
@@ -5619,34 +5619,6 @@
       "image": "path-submission-stage.png"
     },
     {
-      "id": "dy-mtcgttiw-9",
-      "title": "AI追光者（第二季）——非遗很潮 作品征集大赛",
-      "vendor": "（非遗文化征集）",
-      "type": "内容创作",
-      "score": 3,
-      "difficulty": 2,
-      "difficultyNote": "非遗文化主题AI创作",
-      "reward": "非遗主题AI作品征集，具体奖项见官方",
-      "rewardDetail": "官网搜索报名入口。非遗主题AI作品征集，具体奖项见官方",
-      "rewardTypes": [],
-      "format": "线上",
-      "participation": "官网搜索报名入口",
-      "winningCriteria": "",
-      "timelineNotes": "",
-      "startAt": null,
-      "endAt": "2026-09-20T23:59:59+08:00",
-      "deadline_date": "2026-09-20",
-      "region": "中国",
-      "officialStatus": "待确认",
-      "url": "https://www.52jingsai.com",
-      "source": "抖音张小喵",
-      "estimatedEffort": "",
-      "suggestion": "值得参加",
-      "discoveredAt": "2026-08-28T04:42:37.104Z",
-      "slug": "dy-9",
-      "image": "path-submission-stage.png"
-    },
-    {
       "id": "dy-mtcgttiw-10",
       "title": "PixLight 2026全球AI类型片影像大赛",
       "vendor": "（全球AI影像大赛）",
@@ -6069,5 +6041,6 @@
       "slug": "starletter-gamejam-0907",
       "image": "event-pass-macro.png"
     }
-  ]
+  ],
+  "updatedAt": "2026-09-09T16:58:03+08:00"
 }
