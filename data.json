@@ -1,7 +1,7 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-09-09T17:17:10+08:00",
+  "updated_at": "2026-09-09T09:21:05.839Z",
   "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 24 条",
   "activities": [
     {
@@ -4897,7 +4897,7 @@
       "difficulty": null,
       "difficultyNote": null,
       "reward": "",
-      "rewardDetail": "[腾讯云社区入驻](https://cloud.tencent.com/developer/support-plan?invite_code=dck88z433vx)                                                                                                                     激励： 价值80元礼品",
+      "rewardDetail": "[腾讯云社区入驻](https://lucianaib.feishu.cn/wiki/DHQ4wgBC2iwuAGkYZ9ScLm49nrc?from=from_copylink)                                                                                                                     激励： 价值80元礼品",
       "rewardTypes": [],
       "format": null,
       "participation": null,
@@ -4908,7 +4908,7 @@
       "deadline_date": null,
       "region": "其他",
       "officialStatus": "",
-      "url": "https://cloud.tencent.com/developer/support-plan?invite_code=dck88z433vx",
+      "url": "https://lucianaib.feishu.cn/wiki/DHQ4wgBC2iwuAGkYZ9ScLm49nrc?from=from_copylink",
       "source": "lucianaib",
       "estimatedEffort": null,
       "suggestion": "worth-doing",
@@ -5020,33 +5020,6 @@
       "source": "lucianaib",
       "estimatedEffort": null,
       "suggestion": "worth-doing",
-      "discoveredAt": null,
-      "slug": null
-    },
-    {
-      "id": "luc_recvsP0ON1KFbi",
-      "title": "飞书 AI 绝活大会",
-      "vendor": "微信公众号",
-      "type": "其他",
-      "score": 0,
-      "difficulty": null,
-      "difficultyNote": null,
-      "reward": "",
-      "rewardDetail": "[https://www.bilibili.com/video/BV1T28U6cErG](https://www.bilibili.com/video/BV1T28U6cErG)[https://weixin.qq.com/sph/AFWSTzXlE](https://weixin.qq.com/sph/AFWSTzXlE)[https://www.xiaohongshu.com/explore/6a89dec8000000002800aae4?xsec_token=ABiJQpsifCKQdh2HUXagEVUO_jwbpteCluqNayKovA4yw=&xsec_source=pc_user](https://www.xiaohongshu.com/explore/6a89dec8000000002800aae4?xsec_token=ABiJQpsifCKQdh2HUXagEVUO_jwbpteCluqNayKovA4yw=&xsec_source=pc_user)",
-      "rewardTypes": [],
-      "format": null,
-      "participation": null,
-      "winningCriteria": null,
-      "timelineNotes": null,
-      "startAt": "2026-09-09T00:00:00.000+08:00",
-      "endAt": null,
-      "deadline_date": null,
-      "region": "其他",
-      "officialStatus": "",
-      "url": "https://mp.weixin.qq.com/s/d58ouNebSuQWjRv4FYPVkg",
-      "source": "lucianaib",
-      "estimatedEffort": null,
-      "suggestion": "watch",
       "discoveredAt": null,
       "slug": null
     },
@@ -6011,6 +5984,5 @@
       "slug": "starletter-gamejam-0907",
       "image": "event-pass-macro.png"
     }
-  ],
-  "updatedAt": "2026-09-09T17:17:10+08:00"
+  ]
 }
