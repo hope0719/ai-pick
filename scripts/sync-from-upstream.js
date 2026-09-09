@@ -30,7 +30,11 @@ const SNAP_PATH = 'src/data/snapshot.json';
 const LUC_APP = 'N2H8bkae1aBvULsrBedc1TtGnBd';
 const LUC_TBL = 'tblbwA8TGM8eHLRA';
 const LUC_KEEP_STATUS = ['进行中', '长期', '待参加', '等待结果']; // 剔除 结束 / 结束且差评
-const LUC_BLOCKLIST_IDS = ['recvu9WTrZHBEM']; // 已下架 / 用户要求剔除（飞书源状态未更新时强制跳过）
+// JS-banana 源黑名单（已下架 / 用户要求剔除）
+const JB_BLOCKLIST_IDS = ['recvqRXpBMVKBC'];
+const JB_BLOCKLIST_TITLES = ['外滩大会 - 黑客松2026 · AI Coding大赛'];
+// LucianaiB 源黑名单（已下架 / 用户要求剔除，飞书源状态未更新时强制跳过）
+const LUC_BLOCKLIST_IDS = ['recvu9WTrZHBEM'];
 const LUC_BLOCKLIST_TITLES = ['SkillHub 线上挑战赛'];
 
 // —— 枚举 → 中文（对齐上游 enums.ts 的 zh label，与已上线 data.json 一致）——
@@ -247,7 +251,13 @@ function main() {
     console.error('✗ 无法获取上游 snapshot.json（jsDelivr 与 GitHub API 均失败）');
     process.exit(2);
   }
-  const mappedJB = snap.opportunities.map(mapOpp);
+  const mappedJB = snap.opportunities
+    .filter(o => {
+      if (JB_BLOCKLIST_IDS.includes(o.id)) return false;
+      if (JB_BLOCKLIST_TITLES.includes(o.title)) return false;
+      return true;
+    })
+    .map(mapOpp);
 
   // 源2（失败不致命）
   let mappedLuc = [];
@@ -290,6 +300,9 @@ function main() {
   // 这些是人工补录的（观猹/抖音/本地扩充等），双源同步不应冲掉它们
   const manualRecords = (existing && existing.activities ? existing.activities : [])
     .filter(a => {
+      // 黑名单优先：即使之前被误标为手工补录，也强制剔除
+      if (JB_BLOCKLIST_IDS.includes(a.id) || JB_BLOCKLIST_TITLES.includes(a.title)) return false;
+      if (LUC_BLOCKLIST_IDS.includes(a.id) || LUC_BLOCKLIST_TITLES.includes(a.title)) return false;
       const s = a.source || '';
       return s !== 'lucianaib' && !s.startsWith(REPO.split('/')[1]) && !['Devpost','天池','DoraHacks','CompeteHub','lablab.ai','AgentDeadlines','HuggingFace','V2EX','Twitter','官网'].includes(s);
     })
