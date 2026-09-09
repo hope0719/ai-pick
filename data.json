@@ -1,7 +1,7 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-09-09T09:07:02.154Z",
+  "updated_at": "2026-09-09T17:17:10+08:00",
   "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 24 条",
   "activities": [
     {
@@ -4897,7 +4897,7 @@
       "difficulty": null,
       "difficultyNote": null,
       "reward": "",
-      "rewardDetail": "[腾讯云社区入驻](https://lucianaib.feishu.cn/wiki/DHQ4wgBC2iwuAGkYZ9ScLm49nrc?from=from_copylink)                                                                                                                     激励： 价值80元礼品",
+      "rewardDetail": "[腾讯云社区入驻](https://cloud.tencent.com/developer/support-plan?invite_code=dck88z433vx)                                                                                                                     激励： 价值80元礼品",
       "rewardTypes": [],
       "format": null,
       "participation": null,
@@ -4908,7 +4908,7 @@
       "deadline_date": null,
       "region": "其他",
       "officialStatus": "",
-      "url": "https://lucianaib.feishu.cn/wiki/DHQ4wgBC2iwuAGkYZ9ScLm49nrc?from=from_copylink",
+      "url": "https://cloud.tencent.com/developer/support-plan?invite_code=dck88z433vx",
       "source": "lucianaib",
       "estimatedEffort": null,
       "suggestion": "worth-doing",
@@ -6011,5 +6011,6 @@
       "slug": "starletter-gamejam-0907",
       "image": "event-pass-macro.png"
     }
-  ]
+  ],
+  "updatedAt": "2026-09-09T17:17:10+08:00"
 }
