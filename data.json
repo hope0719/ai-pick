@@ -1,7 +1,7 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-09-09T16:00:50.178Z",
+  "updated_at": "2026-09-10T16:01:18.327Z",
   "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 34 条",
   "activities": [
     {
@@ -4984,15 +4984,15 @@
       "participation": null,
       "winningCriteria": null,
       "timelineNotes": null,
-      "startAt": "2026-06-03T00:00:00.000+08:00",
-      "endAt": "2026-09-09T00:00:00.000+08:00",
-      "deadline_date": "2026-09-08",
+      "startAt": "2026-09-15T00:00:00.000+08:00",
+      "endAt": null,
+      "deadline_date": null,
       "region": "其他",
       "officialStatus": "",
       "url": "https://modelscope.cn/events/254/%E8%B5%9B%E9%A2%98%E8%AF%B4%E6%98%8E",
       "source": "lucianaib",
       "estimatedEffort": null,
-      "suggestion": "worth-doing",
+      "suggestion": "watch",
       "discoveredAt": null,
       "slug": null
     },
