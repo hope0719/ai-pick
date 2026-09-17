@@ -1,7 +1,7 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-09-17T18:05:00.761Z",
+  "updated_at": "2026-09-17T18:06:23.690Z",
   "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 35 条",
   "activities": [
     {
@@ -5248,7 +5248,7 @@
       "difficulty": null,
       "difficultyNote": null,
       "reward": "",
-      "rewardDetail": null,
+      "rewardDetail": "✅ 适合小白：主题A零基础入门向，新手手把手教程即可参赛。💰 人人可得60元：前300篇合格文章每篇20元京东卡、单人最多3篇（20×3=60），需CSDN首发≥800字、阅读量200+、质量分80+；人气激励（200/150/50元）可叠加。活动9/14-10/18。",
       "rewardTypes": [],
       "format": null,
       "participation": null,
