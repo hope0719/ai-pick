@@ -39,6 +39,7 @@ const LUC_BLOCKLIST_TITLES = ['SkillHub 线上挑战赛', '飞书 AI 绝活大�
 // LucianaiB 记录人工备注覆盖（飞书表无写权限，人工核实的信息在此维护，同步时覆盖 rewardDetail）
 const LUC_NOTE_OVERRIDES = {
   'recvvgtJXLOl4u': '⚠️ 参赛门槛：需公司/企业资格。腾讯云 WorkBuddy 平台需企业实名认证后方可使用，个人身份无法直接参与本活动。',
+  'recvvguoAzGeHz': '✅ 适合小白：主题A零基础入门向，新手手把手教程即可参赛。💰 人人可得60元：前300篇合格文章每篇20元京东卡、单人最多3篇（20×3=60），需CSDN首发≥800字、阅读量200+、质量分80+；人气激励（200/150/50元）可叠加。活动9/14-10/18。',
 };
 
 // —— 枚举 → 中文（对齐上游 enums.ts 的 zh label，与已上线 data.json 一致）——
