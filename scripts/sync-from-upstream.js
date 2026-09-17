@@ -36,6 +36,10 @@ const JB_BLOCKLIST_TITLES = ['外滩大会 - 黑客松2026 · AI Coding大赛'];
 // LucianaiB 源黑名单（已下架 / 用户要求剔除，飞书源状态未更新时强制跳过）
 const LUC_BLOCKLIST_IDS = ['recvu9WTrZHBEM', 'luc_recvsP0ON1KFbi', 'luc_recvtkjt2XuJfK'];
 const LUC_BLOCKLIST_TITLES = ['SkillHub 线上挑战赛', '飞书 AI 绝活大会', '智见价值：寻找100位财报价值捕手'];
+// LucianaiB 记录人工备注覆盖（飞书表无写权限，人工核实的信息在此维护，同步时覆盖 rewardDetail）
+const LUC_NOTE_OVERRIDES = {
+  'recvvgtJXLOl4u': '⚠️ 参赛门槛：需公司/企业资格。腾讯云 WorkBuddy 平台需企业实名认证后方可使用，个人身份无法直接参与本活动。',
+};
 
 // —— 枚举 → 中文（对齐上游 enums.ts 的 zh label，与已上线 data.json 一致）——
 const TYPE_ZH = { hackathon: '黑客松', 'dev-challenge': '开发挑战', 'dev-incentive': '开发激励', 'ai-competition': 'AI竞赛', 'beta-access': '内测资格', benefit: '权益福利', 'content-creation': '内容创作', other: '其他' };
@@ -190,7 +194,7 @@ function mapLucRecord(r) {
     difficulty: null,
     difficultyNote: null,
     reward: '',
-    rewardDetail: notes,
+    rewardDetail: LUC_NOTE_OVERRIDES[r.record_id] || notes,
     rewardTypes: [],
     format: null,
     participation: null,
