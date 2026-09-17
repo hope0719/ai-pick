@@ -1,8 +1,8 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-09-17T15:24:58.000Z",
-  "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 34 条 + 手工补录(抖音四川观察·鲸锐AI创作大赛)",
+  "updated_at": "2026-09-17T18:05:00.761Z",
+  "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 35 条",
   "activities": [
     {
       "id": "recvn947P1uKeP",
@@ -5194,7 +5194,7 @@
       "difficulty": null,
       "difficultyNote": null,
       "reward": "",
-      "rewardDetail": null,
+      "rewardDetail": "⚠️ 参赛门槛：需公司/企业资格。腾讯云 WorkBuddy 平台需企业实名认证后方可使用，个人身份无法直接参与本活动。",
       "rewardTypes": [],
       "format": null,
       "participation": null,
