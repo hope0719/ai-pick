@@ -1,8 +1,8 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-09-16T16:01:04.887Z",
-  "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 34 条",
+  "updated_at": "2026-09-17T15:24:58.000Z",
+  "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 34 条 + 手工补录(抖音四川观察·鲸锐AI创作大赛)",
   "activities": [
     {
       "id": "recvn947P1uKeP",
@@ -6279,6 +6279,36 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-09T00:00:00.000Z",
       "slug": null
+    },
+    {
+      "id": "dy-scgz-jingrui",
+      "title": "鲸锐AI创作大赛（虎鲸AI人才计划）",
+      "vendor": "虎鲸文娱集团·优酷·大麦娱乐",
+      "type": "内容创作",
+      "score": 5,
+      "difficulty": 4,
+      "difficultyNote": "需提交≥10分钟AI短片+≥1000字故事阐述；作品须原创首发、不得改编现有IP；个人/团队均可，不限AI工具与题材",
+      "reward": "总奖池1000万，单项最高200万",
+      "rewardDetail": "国内首个千万级AI视频创作大赛，265个获奖名额分享1000万现金：鲸锐人才奖1名×200万；最具原创IP奖4名×50万；最佳创意表达/叙事结构/视觉效果/角色塑造奖各5名×10万；新锐创作者奖40名×5万；潜力创作者奖200名×1万。全部入围者纳入「虎鲸AI人才计划」获行业沙龙/作品展映等孵化",
+      "rewardTypes": [
+        "奖金"
+      ],
+      "format": "线上",
+      "participation": "即日起至11月22日，官网 jingrui-ai-competition.youku.com 或优酷App搜索「鲸锐AI创作大赛」报名；投稿需≥10分钟AI短片+≥1000字故事阐述（世界观/角色/剧情）",
+      "winningCriteria": "评委会按选题创意/叙事技巧/视听语言/社会价值四维打分，选出265组入围；排名前25名参加线下提案会角逐最终大奖",
+      "timelineNotes": "9月17日启动征稿，11月22日截止报名；评审后TOP25线下提案",
+      "startAt": "2026-09-17",
+      "endAt": "2026-11-22T23:59:59+08:00",
+      "deadline_date": "2026-11-22",
+      "region": "中国",
+      "officialStatus": "官方确认",
+      "url": "https://jingrui-ai-competition.youku.com/",
+      "source": "抖音四川观察",
+      "estimatedEffort": "7天+",
+      "suggestion": "值得参加",
+      "discoveredAt": "2026-09-17T15:24:58.000Z",
+      "slug": "dy-jingrui",
+      "image": "path-submission-stage.png"
     }
   ]
 }
