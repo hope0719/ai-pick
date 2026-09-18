@@ -1,7 +1,7 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-09-17T18:06:23.690Z",
+  "updated_at": "2026-09-18T16:01:08.056Z",
   "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并 + 手工补录 35 条",
   "activities": [
     {
@@ -5092,7 +5092,7 @@
       "participation": null,
       "winningCriteria": null,
       "timelineNotes": null,
-      "startAt": "2026-09-18T00:00:00.000+08:00",
+      "startAt": "2026-09-24T00:00:00.000+08:00",
       "endAt": null,
       "deadline_date": null,
       "region": "其他",
