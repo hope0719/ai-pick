@@ -41,14 +41,34 @@ const LUC_NOTE_OVERRIDES = {
   'recvvgtJXLOl4u': '⚠️ 参赛门槛：需公司/企业资格。腾讯云 WorkBuddy 平台需企业实名认证后方可使用，个人身份无法直接参与本活动。',
   'recvvguoAzGeHz': '✅ 适合小白：主题A零基础入门向，新手手把手教程即可参赛。💰 人人可得60元：前300篇合格文章每篇20元京东卡、单人最多3篇（20×3=60），需CSDN首发≥800字、阅读量200+、质量分80+；人气激励（200/150/50元）可叠加。活动9/14-10/18。',
 };
+// LucianaiB 记录「字段级」人工修正表。
+// 飞书表只有「起止日期」、没有「报名截止」，其 endAt 常是活动/决赛结束日而非真实报名截止；
+// 且每天 08:00 同步会用上游覆盖 data.json —— 所以任何日期/标题/厂商修正必须登记在此，不能手改 data.json。
+// 口径：中国区活动一律存「当日T23:59:59+08:00」（"X月X日截止"= 截止日 24:00）。
+const LUC_FIELD_OVERRIDES = {
+  recvuGvnhCApUd: {
+    title: '安克创新 Anker 首届黑客松挑战赛',
+    vendor: '安克创新 Anker',
+    endAt: '2026-09-27T23:59:59+08:00', // 飞书「结束日期」是决赛日 10-17，真实报名截止为 9-27
+  },
+};
 
 // —— 枚举 → 中文（对齐上游 enums.ts 的 zh label，与已上线 data.json 一致）——
+// —— 源3：WaytoAGI Events（events.waytoagi.com 公开 REST API）——
+const WAG_API = 'https://events.waytoagi.com/api/events';
+const WAG_SITE = 'https://events.waytoagi.com';
+// 网站 eventKind → 本站类型（meetup/workshop/conference/livestream 统一归入「社区活动」）
+const WAG_TYPE_ZH = { hackathon: '黑客松', meetup: '社区活动', workshop: '社区活动', conference: '社区活动', livestream: '社区活动', other: '其他' };
+const WAG_MODE_ZH = { offline: '线下', online: '线上', hybrid: '线上+线下' };
+// 拉取失败时兜底：低于此条数视作异常，不据此删除已有 waytoagi 记录
+const WAG_MIN_ITEMS = 3;
+
 const TYPE_ZH = { hackathon: '黑客松', 'dev-challenge': '开发挑战', 'dev-incentive': '开发激励', 'ai-competition': 'AI竞赛', 'beta-access': '内测资格', benefit: '权益福利', 'content-creation': '内容创作', other: '其他' };
 const REGION_ZH = { global: '全球', china: '中国', 'north-america': '北美', apac: '亚太', europe: '欧洲', japan: '日本', other: '其他' };
 const REWARD_ZH = { cash: '奖金', 'api-credits': 'API积分', membership: '会员权益', physical: '实物', certificate: '证书', other: '其他' };
 const OFFICIAL_ZH = { confirmed: '官方确认', suspected: '待确认', unofficial: '非官方' };
 const SUGGEST_ZH = { 'act-now': '立即行动', 'worth-doing': '值得参加', watch: '先关注', skip: '跳过' };
-const IMG_BY_TYPE = { '黑客松': 'event-pass-macro.png', '开发挑战': 'path-prize-envelope.png', '开发激励': 'path-api-credits-card.png', 'AI竞赛': 'coding-workshop-duotone.png', '权益福利': 'path-member-benefits-card.png', '内容创作': 'path-submission-stage.png', '内测资格': 'path-api-credits-card.png', other: 'path-prize-envelope.png' };
+const IMG_BY_TYPE = { '黑客松': 'event-pass-macro.png', '开发挑战': 'path-prize-envelope.png', '开发激励': 'path-api-credits-card.png', 'AI竞赛': 'coding-workshop-duotone.png', '权益福利': 'path-member-benefits-card.png', '内容创作': 'path-submission-stage.png', '内测资格': 'path-api-credits-card.png', '社区活动': 'event-pass-macro.png', other: 'path-prize-envelope.png' };
 
 // 飞书源没有类型字段，按标题关键词推断类型（页面类型筛选依赖它）
 function inferType(title) {
@@ -207,7 +227,7 @@ function mapLucRecord(r) {
   // 页面 SUG_CLASS 只认中文枚举，这里必须直接写中文，不能留下英文 key
   const suggestion = (status === '进行中' || status === '长期') ? '值得参加'
     : (status === '待参加' || status === '等待结果') ? '先关注' : null;
-  return {
+  const rec = {
     id: 'luc_' + (r.record_id || title),
     title,
     vendor: deriveVendor(url),
@@ -237,9 +257,89 @@ function mapLucRecord(r) {
     slug: null,
     image: IMG_BY_TYPE[inferType(title)] || IMG_BY_TYPE['其他'],
   };
+  // 应用人工修正（日期/标题/厂商）；endAt 被改时同步重算 deadline_date
+  const ov = LUC_FIELD_OVERRIDES[r.record_id];
+  if (ov) {
+    Object.assign(rec, ov);
+    if (ov.endAt) rec.deadline_date = toDateOnly(ov.endAt);
+  }
+  return rec;
 }
 
-// —— 合并去重：LucianaiB 与 JS-banana 冲突时优先保留 JS-banana ——
+// —— 源3 拉取（events.waytoagi.com 公开 REST API，失败不致命）——
+function getWaytoAGIEvents() {
+  const raw = fetchText(WAG_API);
+  if (!raw) return null;
+  try {
+    const j = JSON.parse(raw);
+    if (!j || !Array.isArray(j.items)) return null;
+    return j.items;
+  } catch (e) { return null; }
+}
+// 本站只用北京时间判断"今天"，避免服务器时区导致活动提前/延后一天出冰
+function todayCN() {
+  const p = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
+  const g = t => p.find(x => x.type === t).value;
+  return `${g('year')}-${g('month')}-${g('day')}`;
+}
+// 站点只提供活动日，不提供报名截止；活动日当天视为最后报名时间。
+// 因此只纳入「活动末日 >= 今天」的记录，过站会自动退出 data.json（天然清理过期活动）。
+const WAG_REGMODE_ZH = { external: '站外链接报名', external_mp: '公众号报名', station: '站内报名', display_only: '仅展示，无需报名' };
+// 英文品牌补中文：否则中文搜索检索不到（页面按标题/厂商全文匹配）
+const WAG_TITLE_ZH = { 'Anker': '安克创新 Anker' };
+function mapWagRecord(it) {
+  let title = String(it.title || '').trim();
+  for (const [en, zh] of Object.entries(WAG_TITLE_ZH)) {
+    if (title.startsWith(en) && !zh.startsWith(title)) title = zh + title.slice(en.length);
+  }
+  const startDay = it.date || null;
+  const endDay = it.endDate || startDay; // 多日活动取末日
+  const type = WAG_TYPE_ZH[it.eventKind] || inferType(title);
+  const mode = WAG_MODE_ZH[it.eventMode] || null;
+  const city = it.city || it.venue || '';
+  const url = it.externalRegUrl || (it.id ? `${WAG_SITE}/events/${encodeURIComponent(it.title)}-${it.id}` : '');
+  const guests = Array.isArray(it.guests) ? it.guests : [];
+  const guestNote = guests.length
+    ? `拟邀/出席嘉宾：${guests.slice(0, 4).map(g => (g.title ? `${g.name}（${g.title}）` : g.name)).filter(Boolean).join('、')}${guests.length > 4 ? ` 等 ${guests.length} 位` : ''}`
+    : null;
+  const bits = [];
+  if (mode) bits.push(mode);
+  if (city) bits.push(city);
+  if (it.capacity) bits.push(`规模约 ${it.capacity} 人`);
+  if (it.organizerName) bits.push(`主办 ${it.organizerName}`);
+  const reg = WAG_REGMODE_ZH[it.regMode] || '';
+  const tags = Array.isArray(it.tags) ? it.tags.filter(Boolean) : [];
+  return {
+    id: 'wag_' + it.id,
+    title,
+    vendor: it.organizerName || deriveVendor(url) || 'WaytoAGI 社区',
+    type,
+    score: 0,
+    difficulty: null,
+    difficultyNote: guestNote,
+    reward: '',
+    rewardDetail: tags.length ? `标签：${tags.slice(0, 8).join(' / ')}` : null,
+    rewardTypes: [],
+    format: mode,
+    participation: [reg, bits.join(' · ')].filter(Boolean).join('；'),
+    winningCriteria: null,
+    timelineNotes: it.time || null,
+    startAt: startDay,
+    endAt: normCNDeadline(`${endDay}T00:00:00+08:00`),
+    deadline_date: toDateOnly(normCNDeadline(`${endDay}T00:00:00+08:00`)),
+    region: '中国',
+    officialStatus: '官方确认',
+    url,
+    source: 'waytoagi',
+    estimatedEffort: null,
+    suggestion: '值得参加',
+    discoveredAt: it.createdAt || null,
+    slug: null,
+    image: IMG_BY_TYPE[type] || IMG_BY_TYPE['其他'],
+  };
+}
+
+// —— 合并去重：与已有记录冲突时优先保留已有的（JS-banana > LucianaiB > WaytoAGI）——
 function mergeActivities(jb, luc) {
   const result = jb.slice();
   const jbNorm = jb.map(a => ({ nT: norm(a.title), nU: normUrl(a.url) }));
@@ -305,9 +405,35 @@ function main() {
     console.warn('⚠ LucianaiB 表拉取失败（飞书 token 可能过期），仅用 JS-banana 源继续。');
   }
 
+  // 源3（WaytoAGI Events，失败不致命；拉取异常时保留上一轮记录而非误删）
+  let mappedWag = null;
+  const rawWag = getWaytoAGIEvents();
+  if (rawWag && rawWag.length >= WAG_MIN_ITEMS) {
+    const today = todayCN();
+    mappedWag = rawWag
+      .filter(e => {
+        if (e.timeStatus === 'ended') return false;
+        const d = e.endDate || e.date;
+        if (!d) return false;
+        return String(d) >= today; // 活动末日 >= 今天（站点不提供报名截止，按活动日口径）
+      })
+      .map(mapWagRecord);
+    console.log(`✓ WaytoAGI Events 拉取成功：${rawWag.length} 条，筛选未结束 ${mappedWag.length} 条`);
+  } else {
+    console.warn(`⚠ WaytoAGI Events 拉取失败或条数过少（${rawWag ? rawWag.length : 'null'}），本轮不以此更新该源`);
+  }
+
   // 合并去重
-  const { result, dropped, kept } = mergeActivities(mappedJB, mappedLuc);
-  console.log(`✓ 合并：JS-banana ${mappedJB.length} + LucianaiB 新纳入 ${kept}（去重 ${dropped}）= 共 ${result.length}`);
+  const base = mergeActivities(mappedJB, mappedLuc);
+  let result = base.result;
+  let dropped = base.dropped, kept = base.kept;
+  let wagKept = 0, wagDropped = 0, wagFallback = 0;
+  if (mappedWag) {
+    const w = mergeActivities(result, mappedWag);
+    result = w.result; dropped += w.dropped; kept += w.kept;
+    wagKept = w.kept; wagDropped = w.dropped;
+  }
+  console.log(`✓ 合并：JS-banana ${mappedJB.length} + LucianaiB 新纳入 ${base.kept}（去重 ${base.dropped}）` + (mappedWag ? ` + WaytoAGI 新纳入 ${wagKept}（去重 ${wagDropped}）` : '') + ` = 共 ${result.length}`);
 
   // 安全阈值（以 JS-banana 为主源）
   let currentCount = 0;
@@ -317,6 +443,15 @@ function main() {
       existing = JSON.parse(fs.readFileSync(OUT_REAL, 'utf8'));
       currentCount = (existing.activities || []).length;
     } catch (e) { existing = null; }
+  }
+
+  if (!mappedWag && existing) {
+    // 兜底：源3 拉取异常时保留上一轮 waytoagi 记录，避免一次性清空
+    const prevWag = (existing.activities || [])
+      .filter(a => a.source === 'waytoagi' && !result.some(r => r.id === a.id));
+    result = [...result, ...prevWag];
+    wagFallback = prevWag.length;
+    console.log(`ℹ 保留上一轮 WaytoAGI 记录 ${prevWag.length} 条`);
   }
   const minCount = currentCount ? Math.ceil(currentCount * 0.5) : 50;
   if (mappedJB.length < minCount) {
@@ -332,6 +467,8 @@ function main() {
       if (JB_BLOCKLIST_IDS.includes(a.id) || JB_BLOCKLIST_TITLES.includes(a.title)) return false;
       if (LUC_BLOCKLIST_IDS.includes(a.id) || LUC_BLOCKLIST_TITLES.includes(a.title)) return false;
       const s = a.source || '';
+      // waytoagi 是自动源（每轮重拉），不可当作手工补录保留，否则会逐日堆积
+      if (s === 'waytoagi') return false;
       return s !== 'lucianaib' && !s.startsWith(REPO.split('/')[1]) && !['Devpost','天池','DoraHacks','CompeteHub','lablab.ai','AgentDeadlines','HuggingFace','V2EX','Twitter','官网'].includes(s);
     })
     .filter(a => a.id && !result.some(r => r.id === a.id)); // 与双源去重（按 id）
@@ -342,7 +479,7 @@ function main() {
     site_name: 'AI 活动雷达',
     tagline: '在时间截止前找到 AI 机会',
     updated_at: new Date().toISOString(),
-    source: `${REPO} (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并` + (manualRecords.length ? ` + 手工补录 ${manualRecords.length} 条` : ''),
+    source: `${REPO} (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」+ events.waytoagi.com 三源合并` + (manualRecords.length ? ` + 手工补录 ${manualRecords.length} 条` : ''),
     activities: merged,
   };
 
@@ -375,7 +512,7 @@ function main() {
   console.log('类型分布：', JSON.stringify(byType));
   console.log('来源分布：', JSON.stringify(bySrc));
 
-  const msg = `chore(sync): 双源同步 JS-banana(${mappedJB.length}) + LucianaiB(${kept},去重${dropped}) — 共${merged.length}条（含手工${manualRecords.length}，新增${added} 移除${removed}），活跃约${active}`;
+  const msg = `chore(sync): 三源同步 JS-banana(${mappedJB.length}) + LucianaiB(${base.kept},去重${base.dropped}) + WaytoAGI(${wagKept}${wagFallback ? `,兜底${wagFallback}` : ''},去重${wagDropped}) — 共${merged.length}条（含手工${manualRecords.length}，新增${added} 移除${removed}），活跃约${active}`;
   try {
     fs.writeFileSync(MSG_FILE, msg, 'utf8');
     execSync(`git -C ${JSON.stringify(PROJECT_DIR)} add data.json`, { stdio: 'ignore' });

@@ -4,7 +4,7 @@ const HIDE_AFTER_MS = 86400000; // 过期宽限：截止时刻已过超过 1 天
 const state = { search:'', type:'all', region:'all', sort:'deadline' };
 let ALL = [];
 
-const TYPE_OPTIONS = ['黑客松','开发挑战','AI竞赛','权益福利','开发激励','内容创作','内测资格','其他'];
+const TYPE_OPTIONS = ['黑客松','开发挑战','AI竞赛','权益福利','开发激励','内容创作','内测资格','社区活动','其他'];
 const REGION_OPTIONS = ['全球','中国','北美','亚太','欧洲','日本','其他'];
 const SORT_OPTIONS = [
   {v:'deadline', t:'截止日期'},
