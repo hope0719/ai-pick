@@ -1,5 +1,19 @@
 # AI 活动雷达 · 信息源清单
 
+## 〇、已接入的自动同步源（每日 08:00 定时任务）
+由 `scripts/sync-from-upstream.js` 自动拉取合并，无需人工介入。
+
+| # | 源 | 入口 | 覆盖内容 |
+|---|---|---|---|
+| 源1 | JS-banana / ai-opportunity-radar | 上游 `src/data/snapshot.json`（jsDelivr CDN） | 全球黑客松、AI 竞赛、云额度，字段最完整 |
+| 源2 | LucianaiB 飞书表「AI 活动推荐」 | `lark-cli base +record-list --as user` | 国内一手活动，含中文备注 |
+| 源3 | WaytoAGI Events | `https://events.waytoagi.com/api/events`（公开 REST API） | 国内**线下聚会/峰会/工作坊/黑客松**，含安克黑客松等独家活动 |
+
+> ⚠️ 源1/源2/源3 的任何字段修正都必须写在同步脚本的 `LUC_FIELD_OVERRIDES` / `LUC_NOTE_OVERRIDES` / `WAG_TITLE_ZH` 映射表里，
+> **直接改 `data.json` 会在次日被同步覆盖**。
+
+以下为**人工维护**的线索渠道（看到后手工补录，同步脚本不会冲掉）：
+
 ## 一、中文资讯流
 | 源 | 类型 | 覆盖内容 |
 |---|---|---|
@@ -20,6 +34,7 @@
 | Hackathon.com | hackathon.com | 国际黑客松聚合 |
 | hackathons.world | hackathons.world | 全球黑客松日历 |
 | HuggingFace | huggingface.co | 社区活动+模型挑战赛 |
+| WaytoAGI Events | events.waytoagi.com | 国内线下 AI 聚会/峰会/黑客松（已接为自动源3） |
 | Papers with Code | paperswithcode.com | 附带竞赛+奖金 |
 
 ## 三、开发者计划 / Credits 渠道

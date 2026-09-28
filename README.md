@@ -29,7 +29,7 @@
 2. **时效管理**：高亮"即将截止"活动，动态隐藏已结束超过 1 天的活动（后端保留全量，前端按时效过滤）；无截止日期的活动归入独立"长期有效"区块。
 3. **投入判断**：每张卡片提供推荐指数、难度、奖励类型、官方确认状态、行动建议（立即行动/值得参加/先关注/跳过），并通过"立即行动"按钮直达报名入口。
 
-数据当前规模：**202 条活动**（黑客松 75 / AI 竞赛 52 / 开发挑战 33 / 内容创作 21 / 权益福利 14 / 开发激励 7），覆盖全球（125）与中国（62）为主，其中**长期有效（无截止日期）26 条**。
+数据当前规模：**230 条活动**（黑客松 90 / AI 竞赛 55 / 开发挑战 34 / 内容创作 24 / 社区活动 4 / 权益福利 6 / 开发激励 6 / 其他 11），覆盖全球（122）与中国（77）为主，其中**长期有效（无截止日期）21 条**。数据每日自动从三个上游源同步更新。
 
 ---
 
@@ -39,17 +39,20 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    上游数据（双源）                            │
+│                    上游数据（三源）                            │
 │  源1: JS-banana/ai-opportunity-radar@main                     │
 │       src/data/snapshot.json（字段完整）                      │
 │  源2: LucianaiB 飞书多维表格「AI 活动推荐」                    │
 │       app_token=N2H8bkae1aBvULsrBedc1TtGnBd /                 │
 │       table=tblbwA8TGM8eHLRA（lark-cli --as user 拉取）        │
+│  源3: WaytoAGI Events（events.waytoagi.com）                  │
+│       公开 REST API: GET /api/events → {ok, items[]}          │
+│       无鉴权、无分页；线下聚会/峰会/黑客松为主                  │
 └──────────────────────────┬────────────────────────────────────┘
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
 │              scripts/sync-from-upstream.js                   │
-│  拉取两源 → 中文枚举映射 → 合并去重 → 安全阈值校验 →            │
+│  拉取三源 → 中文枚举映射 → 合并去重 → 安全阈值校验 →            │
 │  写 data.json（无变化跳过）→ git commit + push origin/main    │
 └──────────────────────────┬────────────────────────────────────┘
                            ▼
@@ -65,10 +68,11 @@
 | 层 | 技术 | 说明 |
 |---|---|---|
 | 前端 | 原生 HTML + CSS + JavaScript（ES6+） | 无框架、无构建、无后端；`index.html`（骨架）+ `app.js`（逻辑）+ `style.css`（样式）分离 |
-| 数据 | `data.json`（JSON） | 全量活动数据（202 条），前端 fetch 拉取后渲染 |
+| 数据 | `data.json`（JSON） | 全量活动数据（230 条），前端 fetch 拉取后渲染 |
 | 部署 | GitHub Pages | 静态托管，push 到 `origin/main` 自动触发构建（pages-build-deployment） |
-| 数据同步 | Node.js 脚本 `scripts/sync-from-upstream.js` | 双源合并同步，支持 `--dry-run` |
+| 数据同步 | Node.js 脚本 `scripts/sync-from-upstream.js` | 三源合并同步，支持 `--dry-run` |
 | 飞书数据源 | `lark-cli`（@larksuite/cli） | 以用户身份（`--as user`）拉取多维表格 |
+| WaytoAGI 数据源 | `events.waytoagi.com/api/events` | 公开 REST API（无鉴权），拉取未结束的社区活动 |
 | 自动化 | WorkBuddy 每日定时任务 | 周期执行同步脚本，无人值守更新数据 |
 | 信息源 | `SOURCES.md` | 人工维护的信息渠道清单（中文资讯/竞赛平台/开发者计划/学术/自媒体） |
 | 观猹信息源 | [watcha.cn/r/LLLNp2](https://watcha.cn/r/LLLNp2) | 观猹（watcha.cn）活动猹频道：AI 行业评论与活动速递，人工核对后补录 |
@@ -84,7 +88,7 @@
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
   "updated_at": "2026-08-24T11:32:00.000Z",
-  "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」双源合并",
+  "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」+ events.waytoagi.com 三源合并",
   "activities": [ /* 活动记录数组 */ ]
 }
 ```
@@ -119,16 +123,19 @@
 | `slug` | string | SEO 短链接 |
 | `image` | string | 类型封面图（assets/ 下） |
 
-### 2.4 双源合并与去重
+### 2.4 三源合并与去重
 
 `scripts/sync-from-upstream.js` 的核心逻辑：
 
 1. **源1 拉取**：jsDelivr CDN 优先、GitHub API（base64）兜底，获取 `JS-banana/ai-opportunity-radar@main/src/data/snapshot.json`。
 2. **源2 拉取**：`lark-cli base +record-list --as user` 拉取 LucianaiB 飞书表，仅保留状态为 `进行中 / 长期 / 待参加 / 等待结果` 的记录（剔除 `结束 / 结束且差评`）。**拉取失败不致命**——仅告警并继续用源1。
-3. **枚举映射**：将上游英文枚举（`hackathon`/`global`/`confirmed` 等）映射为中文，与页面展示一致。
-4. **合并去重**：按「归一化标题 / 链接 / 包含关系」全局比对，冲突时**优先保留字段更完整的 JS-banana**（如微信小程序开发大赛在 LucianaiB 与 JS-banana 同时出现时只保留后者）。
-5. **安全阈值**：合并后记录数 < 现有数据 50% 时中止（防上游异常空表误覆盖）。
-6. **幂等提交**：与现有 data.json 比对，**无变化跳过**；有变化才写盘并 `git commit` + `push origin main` 触发 Pages 更新。
+3. **源3 拉取**：`GET https://events.waytoagi.com/api/events`（公开 REST API，`{ok,items[]}` 全量无分页）。仅纳入 `timeStatus≠ended` 且**活动末日 ≥ 今天**的记录；该站不提供「报名截止」，故按**活动日**作为最后报名时点。活动一结束，下一轮同步会自动将其移出 data.json（天然清理，不留过期数据）。拉取失败或返回条数 < 3 时**保留上一轮记录**，避免异常清空。**该源失败同样不致命。**
+4. **枚举映射**：将上游英文枚举（`hackathon`/`global`/`confirmed` 等）映射为中文，与页面展示一致。WaytoAGI 的 `eventKind` 中 `meetup/workshop/conference/livestream` 统一归入新增类型 **「社区活动」**，`hackathon` 归入「黑客松」。
+5. **人工修正表**：`LUC_FIELD_OVERRIDES` / `LUC_NOTE_OVERRIDES` / `WAG_TITLE_ZH` —— ⚠️ **任何针对上游记录的字段修正都必须写在这里，不能直接改 `data.json`**。因为每天定时任务会用上游重写 data.json，手改会在次日被覆盖。典型场景：飞书表只有「起止日期」没有「报名截止」，其 endAt 常是活动/决赛结束日（如安克黑客松：飞书记 10-17，真实报名截止 9-27）。
+6. **合并去重**：按「归一化标题 / 链接 / 包含关系」全局比对，优先级 **JS-banana > LucianaiB > WaytoAGI**（如微信小程序开发大赛在 LucianaiB 与 JS-banana 同时出现时只保留后者）。
+7. **手工记录保护**：`source` 不属于三源的记录（观猹 / 抖音 / 本地补录）会被保留，不会被同步冲掉；反之 WaytoAGI 这类**自动源不会被当作手工记录保留**，否则会逐日堆积。
+8. **安全阈值**：合并后记录数 < 现有数据 50% 时中止（防上游异常空表误覆盖）。
+9. **幂等提交**：与现有 data.json 比对，**无变化跳过**；有变化才写盘并 `git commit` + `push origin main` 触发 Pages 更新。
 
 ### 2.5 页面结构与渲染规则
 
@@ -153,7 +160,7 @@
 python3 -m http.server 8000          # 或 npx serve
 # 打开 http://localhost:8000
 
-# 2. 手动触发数据同步（拉取双源 → 合并 → 提交推送）
+# 2. 手动触发数据同步（拉取三源 → 合并 → 提交推送）
 node scripts/sync-from-upstream.js
 
 # 3. 试运行（只写 /tmp/data_merged_dry.json，不提交）
@@ -163,7 +170,7 @@ node scripts/sync-from-upstream.js --dry-run
 #    lark-cli: @larksuite/cli（拉取飞书表用，需以用户身份授权）
 ```
 
-> ⚠️ 注意：源2（LucianaiB 飞书表）依赖飞书用户 token（`lark-cli --as user`）。token 过期时脚本会告警并自动降级为仅源1，不会中断同步；恢复需重新登录 lark-cli。
+> ⚠️ 注意：源2（LucianaiB 飞书表）依赖飞书用户 token（`lark-cli --as user`）。token 过期时脚本会告警并自动降级为无源2，不会中断同步；恢复需重新登录 lark-cli。源3（WaytoAGI）为公开接口，无需鉴权。
 
 ### 2.7 目录结构
 
@@ -172,11 +179,11 @@ ai-pick/
 ├── index.html                     # 页面骨架（三区块：即将截止/全部机会/长期有效）
 ├── app.js                         # 前端渲染逻辑（筛选/排序/时效过滤/卡片渲染）
 ├── style.css                      # 全部样式
-├── data.json                      # 全量活动数据（202 条，双源合并）
+├── data.json                      # 全量活动数据（230 条，三源合并）
 ├── SOURCES.md                     # 信息源清单（人工维护）
 ├── assets/                        # 类型封面图（6 张 png）
 ├── scripts/
-│   └── sync-from-upstream.js      # 双源同步脚本（支持 --dry-run）
+│   └── sync-from-upstream.js      # 三源同步脚本（支持 --dry-run）
 └── .gitignore                     # 忽略 .DS_Store / *.log / .workbuddy/
 ```
 
