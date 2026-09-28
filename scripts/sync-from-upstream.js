@@ -50,6 +50,18 @@ const OFFICIAL_ZH = { confirmed: '官方确认', suspected: '待确认', unoffic
 const SUGGEST_ZH = { 'act-now': '立即行动', 'worth-doing': '值得参加', watch: '先关注', skip: '跳过' };
 const IMG_BY_TYPE = { '黑客松': 'event-pass-macro.png', '开发挑战': 'path-prize-envelope.png', '开发激励': 'path-api-credits-card.png', 'AI竞赛': 'coding-workshop-duotone.png', '权益福利': 'path-member-benefits-card.png', '内容创作': 'path-submission-stage.png', '内测资格': 'path-api-credits-card.png', other: 'path-prize-envelope.png' };
 
+// 飞书源没有类型字段，按标题关键词推断类型（页面类型筛选依赖它）
+function inferType(title) {
+  const t = String(title || '');
+  if (/黑客松|黑客马拉松|Hackathon/i.test(t)) return '黑客松';
+  if (/内测|体验官|beta/i.test(t)) return '内测资格';
+  if (/征文|创作|内容 |征集|图文/.test(t)) return '内容创作';
+  if (/激励|免费领取|送会员|额度|积分|福利/.test(t)) return '权益福利';
+  if (/挑战赛|开发挑战|应用开发|智能体开发/.test(t)) return '开发挑战';
+  if (/大赛|竞赛|比赛|赛事|榜单/.test(t)) return 'AI竞赛';
+  return '其他';
+}
+
 // 链接域名 → 友好厂商名（仅用于 LucianaiB 薄字段补全）
 const HOST_VENDOR = {
   'modelscope.cn': 'ModelScope', 'gitcode.com': 'GitCode', 'atomgit.com': 'AtomGit',
@@ -58,11 +70,19 @@ const HOST_VENDOR = {
   'cloud.tencent.com': '腾讯云', 'builderx.csdn.net': 'CSDN', 'lucianaib.feishu.cn': 'LucianaiB',
 };
 
+// 本地日历日期，不用 UTC：+08:00 的零点会被 toISOString 算成前一天
 function toDateOnly(iso) {
   if (!iso) return null;
   const d = new Date(iso);
   if (isNaN(d.getTime())) return null;
-  return d.toISOString().slice(0, 10);
+  const p = n => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+}
+// 中国区来源常把"X月X日截止"写成当日 00:00:00+08:00，按项目时效口径归一为当日 23:59:59
+function normCNDeadline(iso) {
+  if (!iso) return null;
+  const m = String(iso).match(/^(\d{4}-\d{2}-\d{2})T00:00:00(?:\.000)?\+08:00$/);
+  return m ? `${m[1]}T23:59:59+08:00` : iso;
 }
 function norm(s) {
   if (!s) return '';
@@ -184,13 +204,14 @@ function mapLucRecord(r) {
   let url = extractUrl(r['活动链接']);
   if (!url) url = extractUrl(r['参考及注意事项']); // 部分记录链接写在备注里
   const notes = (r['参考及注意事项'] || '') ? String(r['参考及注意事项']).replace(/\n/g, '').trim() : null;
-  const suggestion = (status === '进行中' || status === '长期') ? 'worth-doing'
-    : (status === '待参加' || status === '等待结果') ? 'watch' : null;
+  // 页面 SUG_CLASS 只认中文枚举，这里必须直接写中文，不能留下英文 key
+  const suggestion = (status === '进行中' || status === '长期') ? '值得参加'
+    : (status === '待参加' || status === '等待结果') ? '先关注' : null;
   return {
     id: 'luc_' + (r.record_id || title),
     title,
     vendor: deriveVendor(url),
-    type: '其他',
+    type: inferType(title),
     score: 0,
     difficulty: null,
     difficultyNote: null,
@@ -202,9 +223,11 @@ function mapLucRecord(r) {
     winningCriteria: null,
     timelineNotes: null,
     startAt: r['开始日期'] || null,
-    endAt: r['结束日期'] || null,
+    endAt: normCNDeadline(r['结束日期']) || null,
     deadline_date: toDateOnly(r['结束日期']),
-    region: '其他',
+    // 注意：飞书表只有「起止日期」，没有「报名截止」，此处的 endAt 可能是活动/决赛结束日而非报名截止，
+    // 发现偏差时需手工修正 endAt（参考 "X月X日截止" 的报名口径）
+    region: /\.cn($|\/|:)/.test(url) ? '中国' : '其他',
     officialStatus: '',
     url,
     source: 'lucianaib',
@@ -212,7 +235,7 @@ function mapLucRecord(r) {
     suggestion,
     discoveredAt: null,
     slug: null,
-    image: IMG_BY_TYPE['其他'],
+    image: IMG_BY_TYPE[inferType(title)] || IMG_BY_TYPE['其他'],
   };
 }
 
