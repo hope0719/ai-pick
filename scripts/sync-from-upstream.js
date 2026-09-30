@@ -31,7 +31,7 @@ const LUC_APP = 'N2H8bkae1aBvULsrBedc1TtGnBd';
 const LUC_TBL = 'tblbwA8TGM8eHLRA';
 const LUC_KEEP_STATUS = ['进行中', '长期', '待参加', '等待结果']; // 剔除 结束 / 结束且差评
 // JS-banana 源黑名单（已下架 / 用户要求剔除）
-const JB_BLOCKLIST_IDS = ['recvqRXpBMVKBC'];
+const JB_BLOCKLIST_IDS = ['recvqRXpBMVKBC', 'recvrLhFxlaOQs'];
 const JB_BLOCKLIST_TITLES = ['外滩大会 - 黑客松2026 · AI Coding大赛'];
 // LucianaiB 源黑名单（已下架 / 用户要求剔除，飞书源状态未更新时强制跳过）
 const LUC_BLOCKLIST_IDS = ['recvu9WTrZHBEM', 'luc_recvsP0ON1KFbi', 'luc_recvtkjt2XuJfK'];

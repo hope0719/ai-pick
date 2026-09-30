@@ -3616,37 +3616,6 @@
       "image": "path-prize-envelope.png"
     },
     {
-      "id": "recvrLhFxlaOQs",
-      "title": "2026书生国智科探挑战赛暨第三届飞翔杯AI Agent/Skills开发大赛 — ¥60万奖金池 AI4S多赛道",
-      "vendor": "上海AI实验室+壁仞科技",
-      "type": "AI竞赛",
-      "score": 3,
-      "difficulty": 3,
-      "difficultyNote": null,
-      "reward": "总奖金池60万元，覆盖生命科学/物质科学/地球科学/量子计算/算子开发/自由赛道；另有实习全职优先录用、重大攻关揭榜资格。7月15日WAIC期间启动，赛程含报名",
-      "rewardDetail": "总奖金池60万元，覆盖生命科学/物质科学/地球科学/量子计算/算子开发/自由赛道；另有实习全职优先录用、重大攻关揭榜资格。7月15日WAIC期间启动，赛程含报名/作品提交/社区投票/专家评审/线下黑客松，具体截止以官网公布为准",
-      "rewardTypes": [
-        "奖金",
-        "其他"
-      ],
-      "format": null,
-      "participation": null,
-      "winningCriteria": null,
-      "timelineNotes": null,
-      "startAt": "2026-08-08T16:00:00.000Z",
-      "endAt": null,
-      "deadline_date": null,
-      "region": "中国",
-      "officialStatus": "官方确认",
-      "url": "https://www.lglab.ac.cn/xwdt/xwdt/202607/t20260717_849982.html",
-      "source": null,
-      "estimatedEffort": "1-3天",
-      "suggestion": "值得参加",
-      "discoveredAt": "2026-08-09T02:13:06.908Z",
-      "slug": "2026-ai-agent-skills-60-ai4s",
-      "image": "coding-workshop-duotone.png"
-    },
-    {
       "id": "recvrR9YKp44gM",
       "title": "Q力星期四·小鹏AI出行服务编排Agent挑战赛",
       "vendor": "阿里云(小鹏)",
