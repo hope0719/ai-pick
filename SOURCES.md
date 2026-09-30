@@ -35,6 +35,7 @@
 | hackathons.world | hackathons.world | 全球黑客松日历 |
 | HuggingFace | huggingface.co | 社区活动+模型挑战赛 |
 | WaytoAGI Events | events.waytoagi.com | 国内线下 AI 聚会/峰会/黑客松（已接为自动源3） |
+| 息壤 xir.cn 竞赛 | https://www.xir.cn/competition/ | 中国移动 AI 科研竞赛平台（息壤）。⚠️ **登录态 SPA + qiankun 微前端，无公开 JSON API**（数据走 `/competitionApi/api/common/v1/proxyEasySearch` 网关，外部直连被 nginx 拦截 405/404，且需登录会话）。目前仅作**来源链接跟踪**（手动查看 + 精选补录），未接入自动同步。如需自动入库，须改为浏览器自动化（带登录态）或等官方开放接口 |
 | Papers with Code | paperswithcode.com | 附带竞赛+奖金 |
 
 ## 三、开发者计划 / Credits 渠道
