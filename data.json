@@ -1,7 +1,7 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-10-02T02:33:17.434Z",
+  "updated_at": "2026-10-05T03:10:21.496Z",
   "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」+ events.waytoagi.com 三源合并 + 手工补录 35 条",
   "activities": [
     {
@@ -5792,6 +5792,33 @@
       "estimatedEffort": null,
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-26T05:13:05.347Z",
+      "slug": null
+    },
+    {
+      "id": "wag_e_e1b0a85d26",
+      "title": "AECL26 全球高校 AI 电竞锦标赛",
+      "vendor": "AECL",
+      "type": "其他",
+      "score": 0,
+      "difficulty": null,
+      "difficultyNote": "拟邀/出席嘉宾：大铁桶（2025 AECL Prompt Battle Solo Cup冠军）、Ogen（2025 Prompt Battle Team Championship冠军）、麦橘 MERJIC（头部AI选角导演，视觉模型师，数字艺术家）",
+      "reward": "",
+      "rewardDetail": "标签：AI绘画 / 电竞 / 高校赛事 / AIGC / Midjourney / 创意设计",
+      "rewardTypes": [],
+      "format": "线上+线下",
+      "participation": "站内报名；线上+线下 · 主办 AECL",
+      "winningCriteria": null,
+      "timelineNotes": null,
+      "startAt": "2026-10-18",
+      "endAt": "2026-10-18T23:59:59+08:00",
+      "deadline_date": "2026-10-18",
+      "region": "中国",
+      "officialStatus": "官方确认",
+      "url": "https://events.waytoagi.com/events/AECL26%20%E5%85%A8%E7%90%83%E9%AB%98%E6%A0%A1%20AI%20%E7%94%B5%E7%AB%9E%E9%94%A6%E6%A0%87%E8%B5%9B-e_e1b0a85d26",
+      "source": "waytoagi",
+      "estimatedEffort": null,
+      "suggestion": "值得参加",
+      "discoveredAt": "2026-10-03T16:51:19.715Z",
       "slug": null
     },
     {
