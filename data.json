@@ -1,7 +1,7 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-10-05T03:10:21.496Z",
+  "updated_at": "2026-10-07T14:57:26.423Z",
   "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」+ events.waytoagi.com 三源合并 + 手工补录 35 条",
   "activities": [
     {
@@ -32,7 +32,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-21T04:35:15.866Z",
       "slug": "api-github-star",
-      "image": "path-member-benefits-card.png"
+      "image": "path-member-benefits-card.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvn948vxxOXC",
@@ -62,7 +63,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-21T04:35:15.866Z",
       "slug": "3-pro",
-      "image": "path-member-benefits-card.png"
+      "image": "path-member-benefits-card.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvn949fnMycK",
@@ -92,7 +94,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-21T04:35:15.866Z",
       "slug": "ai-hackathon-genesis-s1",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvn949XKSVkM",
@@ -123,7 +126,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-21T04:35:15.866Z",
       "slug": null,
-      "image": "path-api-credits-card.png"
+      "image": "path-api-credits-card.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvn94axsKOro",
@@ -154,7 +158,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-21T04:35:15.866Z",
       "slug": "2026",
-      "image": "path-api-credits-card.png"
+      "image": "path-api-credits-card.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvn94bdAIyBf",
@@ -185,7 +190,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-06-21T04:35:15.866Z",
       "slug": "global-ai-hackathon-series-with-qwen-cloud-70k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvn94bRL44E9",
@@ -215,7 +221,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-06-21T04:35:15.866Z",
       "slug": "uipath-agenthack-ai-agent-50k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvn94cwnj0Ni",
@@ -245,7 +252,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-21T04:35:15.866Z",
       "slug": "build-with-gemini-xprize-2m",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvn94de4G4ZC",
@@ -275,7 +283,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-06-21T04:35:15.866Z",
       "slug": "gitlab-transcend-hackathon-20k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvn94dQBaCDh",
@@ -306,7 +315,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-21T04:35:15.866Z",
       "slug": "h0-hack-the-zero-stack-80k-cash-80k-aws-credits",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnbb5thqxe0",
@@ -338,7 +348,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-21T12:05:39.079Z",
       "slug": "slack-agent-builder-challenge-42k",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnbgGwZspE8",
@@ -370,7 +381,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-06-21T12:27:53.255Z",
       "slug": "trae-ai-113",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnbJUPFbQ4l",
@@ -400,7 +412,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-06-21T14:23:59.775Z",
       "slug": "kdd-cup-2026-tencent-uni-rec-challenge-885k",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnbJWl5UMfO",
@@ -430,7 +443,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-21T14:24:05.614Z",
       "slug": "raise-summit-ai-hackathon-2026-250k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnbJXLelHvH",
@@ -460,7 +474,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-21T14:24:11.093Z",
       "slug": "arc-prize-2026-2m-kaggle",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnbJYXgp4QW",
@@ -490,7 +505,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-21T14:24:15.630Z",
       "slug": "aws-ai-league-2026-championship-50k",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvneB2xwBo7S",
@@ -520,7 +536,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-22T02:07:32.961Z",
       "slug": "agibot-world-challenge-icra-2026-530k",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvneB6KCiC92",
@@ -551,7 +568,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-22T02:07:48.850Z",
       "slug": "codex-for-open-source-6-chatgpt-pro-api-credits",
-      "image": "path-member-benefits-card.png"
+      "image": "path-member-benefits-card.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnh1Oh6siso",
@@ -582,7 +600,8 @@
       "suggestion": "跳过",
       "discoveredAt": "2026-06-22T12:06:26.439Z",
       "slug": "2026-ai-19w",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnh1U6xv7CE",
@@ -612,7 +631,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-06-22T12:06:48.753Z",
       "slug": "llm-20k-264",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnh1W4yclA6",
@@ -643,7 +663,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-22T12:06:56.129Z",
       "slug": "2026-d-6",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnh1XTKJIJo",
@@ -675,7 +696,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-22T12:07:03.142Z",
       "slug": "amd-developer-hackathon-act-ii-ai-agents-on-amd-gpus-10k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnkrfVKOUGk",
@@ -706,7 +728,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-23T02:06:19.376Z",
       "slug": "ai",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnkroJSMLJw",
@@ -737,7 +760,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-23T02:06:53.090Z",
       "slug": "iccse-2026-agentic-ai-competition",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnkrqHT4no7",
@@ -768,7 +792,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-23T02:07:00.728Z",
       "slug": "car-bench-challenge-ijcai-ecai-2026-llm-agent",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnkrszm6TkP",
@@ -798,7 +823,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-23T02:07:08.378Z",
       "slug": "vslive-ai-hackathon-microsoft-hq-2026-25k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnnoAzxRIAp",
@@ -828,7 +854,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-23T14:14:33.235Z",
       "slug": "2026-h2",
-      "image": "path-api-credits-card.png"
+      "image": "path-api-credits-card.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnqikpLUYti",
@@ -860,7 +887,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-24T02:08:29.448Z",
       "slug": "2026-ai-15-5-ai",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnqip9rSwqt",
@@ -890,7 +918,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-24T02:08:48.220Z",
       "slug": "c4-ai-2026",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnw8IqWJRYN",
@@ -921,7 +950,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-25T02:07:56.571Z",
       "slug": "kdd-cup-2026-hkust-data-agents-challenge-complex-data-analysis",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnw8KBe60GN",
@@ -951,7 +981,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-25T02:08:05.343Z",
       "slug": "tpc-ijcai-2026-travel-itinerary-planning-challenge-for-ai-agents",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnC0m5y395r",
@@ -982,7 +1013,8 @@
       "suggestion": "跳过",
       "discoveredAt": "2026-06-26T02:12:22.514Z",
       "slug": "agentx-agentbeats-competition-build-benchmarks-ai-agents-1m-prizes",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnEpIN6SxJw",
@@ -1012,7 +1044,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-26T12:05:40.429Z",
       "slug": "ai-genesis-2026-global-hybrid-ai-hackathon-function1-dubai",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnHQnIXKFCe",
@@ -1043,7 +1076,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-27T02:10:23.521Z",
       "slug": "decentralize-ai-hackathon-51k-35k-ai-credits",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnHQq7gk1yX",
@@ -1074,7 +1108,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-27T02:10:31.579Z",
       "slug": "ethonline-2026-ai-web3-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnHQBb8nvWP",
@@ -1104,7 +1139,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-27T02:11:15.209Z",
       "slug": "2026-data-ai-ai",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnKi6dSrurd",
@@ -1134,7 +1170,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-27T12:13:01.852Z",
       "slug": "ethglobal-lisbon-2026-ai-web3-hackathon-125k-prizes",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnKi8o0OByN",
@@ -1164,7 +1201,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-27T12:13:10.119Z",
       "slug": "humanity-s-last-hackathon-mac-metal-kernel-optimization-with-codex",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnNGrhYCVZc",
@@ -1194,7 +1232,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-28T02:08:31.850Z",
       "slug": "ibm-ai-builders-challenge-with-ibm-bob-15k-prizes-for-university-students",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnNGtgm6Ssc",
@@ -1224,7 +1263,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-28T02:08:39.762Z",
       "slug": "ethglobal-tokyo-2026-ai-web3-hackathon-800-builders",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnVXpSxir2F",
@@ -1254,7 +1294,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-29T12:06:08.179Z",
       "slug": "devnetwork-api-cloud-ai-hackathon-2026-40-500",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnZnozBlPrZ",
@@ -1285,7 +1326,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-30T02:08:08.606Z",
       "slug": "ethglobal-mumbai-2026-ai-web3-hackathon-125k-prizes",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvnZntP7Pwdc",
@@ -1315,7 +1357,8 @@
       "suggestion": "跳过",
       "discoveredAt": "2026-06-30T02:08:27.181Z",
       "slug": "futureai-global-hackathon-2026-students-only-non-cash-prizes",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvo1O72XgyiC",
@@ -1345,7 +1388,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-30T12:06:47.591Z",
       "slug": "gloo-ai-hackathon-2026-200k-prizes-boulder-co",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvo1O94kuZDQ",
@@ -1375,7 +1419,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-30T12:06:57.235Z",
       "slug": "scripture-in-new-frontiers-virtual-summer-challenge-kaggle",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvo5dh0TXH5u",
@@ -1405,7 +1450,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-01T02:05:34.434Z",
       "slug": "since-ai-hackathon-2026-72h-ai-hackathon-50k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvo7DJapZvhz",
@@ -1436,7 +1482,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-07-01T12:03:11.961Z",
       "slug": "hack-nation-5th-global-ai-hackathon-35k-cash-150k-api-credits",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvob3CYoxVz2",
@@ -1466,7 +1513,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-02T02:04:53.512Z",
       "slug": "croo-agent-hackathon-ai-agents-a2a-blockchain-10-2k",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoduv9uMtmi",
@@ -1496,7 +1544,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-02T12:04:10.902Z",
       "slug": "nvidia-physicalai-av-reasoning-challenge-2026-dgx-spark-prize",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvopbGwWuFul",
@@ -1526,7 +1575,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-04T12:04:42.791Z",
       "slug": "ai-infra-summit-hackathon-2026-ai-santa-clara",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvopbJ7CtKfD",
@@ -1556,7 +1606,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-04T12:04:53.235Z",
       "slug": "munichtech-innovation-hackathon-2026-ai",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvosBbqd6dk9",
@@ -1586,7 +1637,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-05T02:04:48.305Z",
       "slug": "afac2026",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvosBeNY3Igw",
@@ -1616,7 +1668,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-05T02:05:01.931Z",
       "slug": "40k-695",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvosBgR51gCZ",
@@ -1646,7 +1699,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-05T02:05:10.245Z",
       "slug": "tether-developers-cup-8k-p2p-localai-wallets-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvosBiTYmx1C",
@@ -1676,7 +1730,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-05T02:05:18.156Z",
       "slug": "keeperhub-agents-onchain-hackathon-ai-agent-5k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoAT2XkS2Uy",
@@ -1706,7 +1761,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-06T12:05:56.510Z",
       "slug": "native-builder-build-without-limits-ai-native-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoGJJBj3Cmh",
@@ -1736,7 +1792,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-07T12:06:35.401Z",
       "slug": "techex-amsterdam-hackathon-ai-big-data-expo-europe-2026",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoLLxt6IpvD",
@@ -1766,7 +1823,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-07T16:00:00.000Z",
       "slug": "pinch-me-i-want-50k-50k-ai-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoLLyonIf1h",
@@ -1796,7 +1854,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-07T16:00:00.000Z",
       "slug": "build-with-datahub-the-agent-hackathon-20-5k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoLLzb4hoB0",
@@ -1826,7 +1885,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-07T16:00:00.000Z",
       "slug": "backblaze-generative-media-hackathon-genblaze-on-b2-10k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoLLzVwRz5u",
@@ -1856,7 +1916,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-07T16:00:00.000Z",
       "slug": "2026-8-8",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoM93rBcVmt",
@@ -1886,7 +1947,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-28T16:00:00.000Z",
       "slug": "cockroachdb-x-aws-hackathon-build-with-agentic-memory",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoM948n0nVq",
@@ -1916,7 +1978,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-28T16:00:00.000Z",
       "slug": "arm-create-ai-optimization-challenge",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoM94N81cOR",
@@ -1947,7 +2010,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-28T16:00:00.000Z",
       "slug": "2026-iflytek-ai",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoM95ulx9Om",
@@ -1977,7 +2041,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-28T16:00:00.000Z",
       "slug": "hicool-2026",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoM969wnzHP",
@@ -2007,7 +2072,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-06-28T16:00:00.000Z",
       "slug": "amazon-nova-ai-challenge-2026-trusted-software-agents",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoM98TylpI9",
@@ -2037,7 +2103,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-28T16:00:00.000Z",
       "slug": "aws-ai-league-2026-championship",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoM99BB1HC3",
@@ -2068,7 +2135,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-28T16:00:00.000Z",
       "slug": "data-ai",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoM9bV2Uo1x",
@@ -2099,7 +2167,8 @@
       "suggestion": "跳过",
       "discoveredAt": "2026-06-28T16:00:00.000Z",
       "slug": "usaii-global-ai-hackathon-2026",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoM9hJ6QHKR",
@@ -2129,7 +2198,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-06-28T16:00:00.000Z",
       "slug": "africa-deep-tech-challenge-2026",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoMA4hltK0K",
@@ -2159,7 +2229,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-08T12:05:49.671Z",
       "slug": "2026-25",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoPZaGXmnhw",
@@ -2189,7 +2260,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-09T02:04:21.390Z",
       "slug": "2026-super-agent-9",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoT0KTE7KRu",
@@ -2219,7 +2291,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-08T16:00:00.000Z",
       "slug": "kaya-ai-india-hackathon-2026",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoT0Q6xaa6G",
@@ -2249,7 +2322,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-08T16:00:00.000Z",
       "slug": "youcam-api-skin-ai-apparel-vto-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoTbi9FbdVM",
@@ -2279,7 +2353,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-07-08T16:00:00.000Z",
       "slug": "nandahack-mit-media-lab-x-hcltech-agentic-ai-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoTbj3huyzd",
@@ -2309,7 +2384,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-08T16:00:00.000Z",
       "slug": "xdeepmind-build-with-google-gemini",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoTbqd6O7HW",
@@ -2339,7 +2415,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-08T16:00:00.000Z",
       "slug": "ai-ai",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoTbr4kKyQr",
@@ -2369,7 +2446,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-08T16:00:00.000Z",
       "slug": "volthacks-iot-ai-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvoXp2rv3ZqY",
@@ -2399,7 +2477,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-10T08:31:00.570Z",
       "slug": "ai-inspire-plan",
-      "image": "path-member-benefits-card.png"
+      "image": "path-member-benefits-card.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvpdnINHvJxx",
@@ -2429,7 +2508,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-13T02:06:07.280Z",
       "slug": "flare-summer-signal-blockchain-ai-hackathon-12k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvpjdVpbKtWA",
@@ -2459,7 +2539,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-07-14T02:04:51.515Z",
       "slug": "openai-build-week-100k-codex-gpt-5-6-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvplERvhGeT0",
@@ -2490,7 +2571,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-14T12:04:24.494Z",
       "slug": "weex-ai-wars-ii-rise-of-intelligence-200k-usdt-ai",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvprvHcIuqVP",
@@ -2521,7 +2603,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-15T12:05:37.610Z",
       "slug": "bli-legal-tech-hackathon-2-50k-bounties-legal-tech-innovation",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvpALeA7d85c",
@@ -2551,7 +2634,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-17T02:03:47.113Z",
       "slug": "amd-ai-devmaster-hackathon-30k-3-multimodal-agentic-physical-ai",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvpGBG47L5jV",
@@ -2582,7 +2666,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-18T02:03:28.384Z",
       "slug": "2026-20-3-ai",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvpJ2MJA4tpQ",
@@ -2612,7 +2697,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-18T12:03:41.587Z",
       "slug": "okx-ai-genesis-hackathon-100k-8-agent-service-provider",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvpJ2Pg1mU3Q",
@@ -2643,7 +2729,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-18T12:03:51.576Z",
       "slug": "casper-agentic-buildathon-2026-final-round-150k-agentic-ai-defi-rwa",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvpUJN9kqsW7",
@@ -2674,7 +2761,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-20T12:03:30.700Z",
       "slug": "opc-ai-agent",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvqRUzJwJcAc",
@@ -2704,7 +2792,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-29T16:00:00.000Z",
       "slug": "agentic-cinema-the-blockbuster-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvqRUG3byLNK",
@@ -2734,7 +2823,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-07-29T16:00:00.000Z",
       "slug": "the-email-game-adversarial-ai-agent-competition",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvqRUGLRg39O",
@@ -2764,7 +2854,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-29T16:00:00.000Z",
       "slug": "cockroachdb-aws-hackathon-build-with-agentic-memory",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvqRUJT0nhQE",
@@ -2794,7 +2885,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-29T16:00:00.000Z",
       "slug": "keeperhub-agents-onchain-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvqUyW3gUzJi",
@@ -2825,7 +2917,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-30T16:00:00.000Z",
       "slug": "ai-agent-builder-series-2026-google-ai-stack-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvqUz2co118p",
@@ -2855,7 +2948,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-30T16:00:00.000Z",
       "slug": "ai-agent-security-multi-step-tool-attacks-kaggle",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvqUz30q55jG",
@@ -2886,7 +2980,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-30T16:00:00.000Z",
       "slug": "the-pok-mon-company-ptcg-ai-battle-challenge-kaggle",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvqUz70O9vLg",
@@ -2916,7 +3011,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-07-30T16:00:00.000Z",
       "slug": "weex-ai-wars-ii-vs-dorahacks",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvqUzb85CJPc",
@@ -2947,7 +3043,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-30T16:00:00.000Z",
       "slug": "goai",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvr8MLIgmYzs",
@@ -2977,7 +3074,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-02T12:12:01.881Z",
       "slug": "wearable-ai-grand-challenge-eccv-2026-21k-ai",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvr8MNrXoHnT",
@@ -3007,7 +3105,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-02T12:12:08.746Z",
       "slug": "call-e-your-code-is-calling-10k-ai-agent",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrcdcJrRuMD",
@@ -3037,7 +3136,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-03T02:15:51.146Z",
       "slug": "behavior-challenge-2026-11k",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvreDiB17yty",
@@ -3068,7 +3168,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-03T12:12:02.558Z",
       "slug": "2026-gaiiec-30",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvreDkMmgHJb",
@@ -3098,7 +3199,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-03T12:12:11.619Z",
       "slug": "agents-for-impact-2026-2027-ai-agent",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrnUFfzNBfb",
@@ -3128,7 +3230,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-05T02:17:28.351Z",
       "slug": "delphi-agent-arena-competition-10k-ai-agent",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrnVaDuFNna",
@@ -3158,7 +3261,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-05T02:19:29.121Z",
       "slug": "the-rise-of-ai-agents-hackathon-60k-ai-agent-dubai-ai-week",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrqlythKe7O",
@@ -3189,7 +3293,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-05T12:16:49.897Z",
       "slug": "creative-minds-jam-1-hong-kong-10k-agent",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrtLMyXU03Z",
@@ -3219,7 +3324,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-08-06T02:19:49.937Z",
       "slug": "all-things-agentic-hackathon-180k-agentic-ai-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrtLP6qcR6G",
@@ -3250,7 +3356,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-06T02:19:59.395Z",
       "slug": "reverie-hacks-2026-263k-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrtLRynOic4",
@@ -3280,7 +3387,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-08-06T02:20:09.339Z",
       "slug": "ai-factory-hackathon-native-builder-10k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrtLTEWqQNw",
@@ -3311,7 +3419,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-06T02:20:17.066Z",
       "slug": "buidl-ctc-2026-fall-15k-attestcoin-protocol-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrwcEgxQTpV",
@@ -3341,7 +3450,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-06T12:19:05.596Z",
       "slug": "tiktok-techjam-2026-34-5k-72-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrwcGvUP1to",
@@ -3371,7 +3481,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-06T12:19:14.135Z",
       "slug": "ccl-2026-ai-40k",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrzCZjHr0Ic",
@@ -3401,7 +3512,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-07T02:22:32.005Z",
       "slug": "revenuecat-shipaton-2026-700k-app-hackathon",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrzDeRiubOg",
@@ -3432,7 +3544,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-07T02:23:31.947Z",
       "slug": "2026-iflytek-ai-1",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrC1yHMAvJF",
@@ -3462,7 +3575,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-07T12:12:40.341Z",
       "slug": "ibm-bob-2-0-hackathon-ai-10k-48h",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrC1RcVslpd",
@@ -3492,7 +3606,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-07T12:13:52.011Z",
       "slug": "glee-competition-iab-neurips-2026-ai-agent-6k",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrC23GySB0h",
@@ -3523,7 +3638,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-07T12:14:39.966Z",
       "slug": "8-25",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrFtFOSEynz",
@@ -3553,7 +3669,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-08T02:23:09.945Z",
       "slug": "kaggriculture-ai-agent-50k",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrHSI1dK0Ch",
@@ -3583,7 +3700,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-08T12:15:09.458Z",
       "slug": "2026-ai-49",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrHSOoPzFwZ",
@@ -3613,7 +3731,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-08T12:15:34.027Z",
       "slug": "2026-unity-beyond-coding-ai",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrR9YKp44gM",
@@ -3644,7 +3763,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-10T02:20:12.164Z",
       "slug": "q-ai-agent",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrTA9WJzWfG",
@@ -3674,7 +3794,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-08-10T12:16:44.171Z",
       "slug": "goai-2026-500-100",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrTAc96GCQX",
@@ -3704,7 +3825,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-10T12:16:53.200Z",
       "slug": "build-in-bilibili-ai-137-100",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrTAdWJKpUe",
@@ -3734,7 +3856,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-10T12:17:00.184Z",
       "slug": "ai-2026-100-ai",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrTAi4vCoEw",
@@ -3765,7 +3888,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-10T12:17:16.131Z",
       "slug": "seedance-2-5-5-100",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrTAjKWxpbi",
@@ -3795,7 +3919,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-10T12:17:22.701Z",
       "slug": "2026-10",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrZpFhH1W0B",
@@ -3825,7 +3950,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-11T12:12:41.193Z",
       "slug": "decentraland-friendzone-mobile-buildathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvrZpHCFI1rP",
@@ -3855,7 +3981,8 @@
       "suggestion": "跳过",
       "discoveredAt": "2026-08-11T12:12:50.531Z",
       "slug": "pixel-forge-ai-hackathon-2026-13k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvs5jMBnR7IQ",
@@ -3885,7 +4012,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-12T12:26:57.661Z",
       "slug": "2026-ai-ai-21",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvs5jSyAuy1V",
@@ -3915,7 +4043,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-12T12:27:20.583Z",
       "slug": "2026-camera-csig-20-2",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvs5jXqkujS8",
@@ -3945,7 +4074,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-12T12:27:39.199Z",
       "slug": "ieee-aicas-2026-grand-challenge-vlm-ai-chips-3-5k",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvs8J3r6Uxdz",
@@ -3976,7 +4106,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-13T02:26:09.148Z",
       "slug": "2026-5-20",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsb7Fj22byb",
@@ -4008,7 +4139,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-13T12:16:27.447Z",
       "slug": "hack-for-humanity-summer-2026-ai-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvseyjKdWMbR",
@@ -4038,7 +4170,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-14T02:21:07.977Z",
       "slug": "aws-trainium-frontier-competition-40k-trainium2",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvseyxWjqD7h",
@@ -4068,7 +4201,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-14T02:22:03.267Z",
       "slug": "3-6",
-      "image": "path-member-benefits-card.png"
+      "image": "path-member-benefits-card.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsh2UtdAOQA",
@@ -4098,7 +4232,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-14T12:35:12.214Z",
       "slug": "2026-ai-10-8-31",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsh2WxQfDfq",
@@ -4128,7 +4263,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-14T12:35:20.328Z",
       "slug": "alpaca-ai-trading-agents-hackathon-5k-ai-agent",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsmNUIr3JzU",
@@ -4158,7 +4294,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-15T12:13:16.310Z",
       "slug": "agents-for-humans-hackathon-40k-3-ai-agent",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsmNWXWXglf",
@@ -4188,7 +4325,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-15T12:13:25.248Z",
       "slug": "oneaquahealth-ieee-global-hackathon-2026-3k-ai",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsqd4NM78Uy",
@@ -4218,7 +4356,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-16T02:12:02.161Z",
       "slug": "proof-of-possible-2026-9k-3-ai",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsqdiZpCXOQ",
@@ -4248,7 +4387,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-16T02:12:57.052Z",
       "slug": "2026-realworld-30",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsw5ywNDVuc",
@@ -4279,7 +4419,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-17T02:19:47.511Z",
       "slug": "gatewayhacks-2026-11-7k-ai-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsw5B0Abdwu",
@@ -4311,7 +4452,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-17T02:19:57.239Z",
       "slug": "skill-fscic-skill-12-3k",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsyvd9e4hSs",
@@ -4341,7 +4483,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-17T12:14:15.069Z",
       "slug": "2026-100-opc",
-      "image": "path-api-credits-card.png"
+      "image": "path-api-credits-card.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsHNkra3nyG",
@@ -4371,7 +4514,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-19T02:22:39.813Z",
       "slug": "event-contracts-hackathon-defi-5k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsHNmUt3HL2",
@@ -4401,7 +4545,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-19T02:22:49.508Z",
       "slug": "anna-ai-app-builder-program-ai-6k",
-      "image": "path-api-credits-card.png"
+      "image": "path-api-credits-card.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsKbtNTekOI",
@@ -4432,7 +4577,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-19T12:11:08.070Z",
       "slug": "the-great-agent-hackathon-2026-ai-agent-24h",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsKbvQKFIdd",
@@ -4462,7 +4608,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-19T12:11:16.767Z",
       "slug": "agenthon-2026-neurips-agent-4-9-28",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsNBx8OHpTP",
@@ -4492,7 +4639,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-20T02:13:26.472Z",
       "slug": "2026-ai-ai-for-future-talent",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsNBztt2CGd",
@@ -4522,7 +4670,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-20T02:13:36.094Z",
       "slug": "zai-glm-5-2-api-8-27",
-      "image": "path-member-benefits-card.png"
+      "image": "path-member-benefits-card.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsQ2s52O7vV",
@@ -4552,7 +4701,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-20T12:12:54.848Z",
       "slug": "aimo-interpretability-challenge-neurips-2026-12-5k-5k",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsQ2ueD8E8g",
@@ -4582,7 +4732,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-20T12:13:03.516Z",
       "slug": "the-steerability-challenge-neurips-2026-steering",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsTsveQPz8U",
@@ -4612,7 +4763,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-21T02:15:10.735Z",
       "slug": "ieee-climatechain-global-hackathon-2026-ai-blockchain-3k",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsVSOH9Q3NA",
@@ -4643,7 +4795,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-21T12:12:16.702Z",
       "slug": "ai-agentsociety-300-200-api",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsVSQPwp8L4",
@@ -4674,7 +4827,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-21T12:12:25.236Z",
       "slug": "hack-nation-global-ai-hackathon-7-35k-credits-10-3-4-14",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvsZmsnP8WTD",
@@ -4704,7 +4858,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-22T02:28:48.560Z",
       "slug": "roco-spring-robust-correspondence-challenge-neurips-2026",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvt57Mk0TVE9",
@@ -4734,7 +4889,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-23T02:08:09.336Z",
       "slug": "codetoimpact-hackathon-2026-gic-anthropic-1",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvt7zXHhwdjx",
@@ -4764,7 +4920,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-23T12:12:39.045Z",
       "slug": "2026-401-ai",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvt7A0PidOVu",
@@ -4794,7 +4951,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-23T12:12:51.559Z",
       "slug": "ai-s9-ascend-c",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvt7A2E11Umn",
@@ -4824,7 +4982,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-23T12:12:58.398Z",
       "slug": "amd-developer-hackathon-act-iii-5k-ai-agents-on-amd-gpus",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvtgTtu0IiSf",
@@ -4855,7 +5014,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-08-25T02:26:35.868Z",
       "slug": "creatio-agent-arena-hackathon-2026",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvw1qwkxY3Fd",
@@ -4886,7 +5046,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-22T16:00:00.000Z",
       "slug": "build-ship-shape-amazon-developer-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvw1qxrT6VCq",
@@ -4917,7 +5078,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-22T16:00:00.000Z",
       "slug": "nebius-x-nvidia-global-ai-hackathon",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvw1qyfKpnDo",
@@ -4947,7 +5109,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-22T16:00:00.000Z",
       "slug": "opencv-ai-competition-2026-powered-by-aws",
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvw1qz0dPZbG",
@@ -4978,7 +5141,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-09-22T16:00:00.000Z",
       "slug": "galuxium-nexus-v2",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvw1qBqpI2QA",
@@ -5008,7 +5172,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-09-22T16:00:00.000Z",
       "slug": "build-with-ai-basics",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvw1qC9Ds0pH",
@@ -5039,7 +5204,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-22T16:00:00.000Z",
       "slug": "2026-moonbit",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvw1qCTvMHq3",
@@ -5071,7 +5237,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-09-22T16:00:00.000Z",
       "slug": "global-innovation-build-challenge-v2",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "recvw1qDDIY1AN",
@@ -5103,7 +5270,8 @@
       "suggestion": "先关注",
       "discoveredAt": "2026-09-22T16:00:00.000Z",
       "slug": "ml-empowerment-build-challenge-3-0",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvbRVTSwyQaH",
@@ -5130,7 +5298,8 @@
       "estimatedEffort": null,
       "suggestion": "值得参加",
       "discoveredAt": null,
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvbRVTSwXZuw",
@@ -5157,7 +5326,8 @@
       "estimatedEffort": null,
       "suggestion": "值得参加",
       "discoveredAt": null,
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvfCeKLi5vsM",
@@ -5184,7 +5354,8 @@
       "estimatedEffort": null,
       "suggestion": "值得参加",
       "discoveredAt": null,
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvsUGxoLy1Ot",
@@ -5211,7 +5382,8 @@
       "estimatedEffort": null,
       "suggestion": "先关注",
       "discoveredAt": null,
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvsUGLk5OfFr",
@@ -5238,7 +5410,8 @@
       "estimatedEffort": null,
       "suggestion": "先关注",
       "discoveredAt": null,
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvtkbGwIq4z0",
@@ -5265,7 +5438,8 @@
       "estimatedEffort": null,
       "suggestion": "值得参加",
       "discoveredAt": null,
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvu2raEVwNz4",
@@ -5292,7 +5466,8 @@
       "estimatedEffort": null,
       "suggestion": "先关注",
       "discoveredAt": null,
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvuGvnhCApUd",
@@ -5320,7 +5495,8 @@
       "suggestion": "值得参加",
       "discoveredAt": null,
       "slug": null,
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvvgtJXLOl4u",
@@ -5347,7 +5523,8 @@
       "estimatedEffort": null,
       "suggestion": "先关注",
       "discoveredAt": null,
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvvgu7cYvB6U",
@@ -5375,7 +5552,8 @@
       "suggestion": "先关注",
       "discoveredAt": null,
       "slug": null,
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvvguoAzGeHz",
@@ -5403,7 +5581,8 @@
       "suggestion": "先关注",
       "discoveredAt": null,
       "slug": null,
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvvgx2LA8oAp",
@@ -5431,7 +5610,8 @@
       "suggestion": "值得参加",
       "discoveredAt": null,
       "slug": null,
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvw3O9LIjrbK",
@@ -5458,7 +5638,8 @@
       "estimatedEffort": null,
       "suggestion": "值得参加",
       "discoveredAt": null,
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvw8PCjHA6Ah",
@@ -5486,7 +5667,8 @@
       "suggestion": "值得参加",
       "discoveredAt": null,
       "slug": null,
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvw8Q6kLQ2Kx",
@@ -5514,7 +5696,8 @@
       "suggestion": "值得参加",
       "discoveredAt": null,
       "slug": null,
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvw8QuBD0Vdx",
@@ -5542,7 +5725,8 @@
       "suggestion": "值得参加",
       "discoveredAt": null,
       "slug": null,
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvw8QJEUaKOv",
@@ -5570,7 +5754,8 @@
       "suggestion": "值得参加",
       "discoveredAt": null,
       "slug": null,
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvw8UbJvoGok",
@@ -5598,7 +5783,8 @@
       "suggestion": "先关注",
       "discoveredAt": null,
       "slug": null,
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvwcIBCzAQfp",
@@ -5626,7 +5812,8 @@
       "suggestion": "值得参加",
       "discoveredAt": null,
       "slug": null,
-      "image": "coding-workshop-duotone.png"
+      "image": "coding-workshop-duotone.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "luc_recvwjnkCWaH5H",
@@ -5653,7 +5840,8 @@
       "estimatedEffort": null,
       "suggestion": "先关注",
       "discoveredAt": null,
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "wag_e_bc3b78f96f",
@@ -5681,7 +5869,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-07-14T08:02:24.050Z",
       "slug": null,
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "wag_e_fa883cfcd9",
@@ -5709,7 +5898,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-02T10:44:46.241Z",
       "slug": null,
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "wag_e_68523effdd",
@@ -5737,7 +5927,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-02T14:13:00.300Z",
       "slug": null,
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "wag_e_68f515d808",
@@ -5765,7 +5956,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-10-01T03:42:25.781Z",
       "slug": null,
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "wag_e_f227725a14",
@@ -5792,7 +5984,8 @@
       "estimatedEffort": null,
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-26T05:13:05.347Z",
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "wag_e_e1b0a85d26",
@@ -5819,7 +6012,8 @@
       "estimatedEffort": null,
       "suggestion": "值得参加",
       "discoveredAt": "2026-10-03T16:51:19.715Z",
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "wag_e_5669b86614",
@@ -5847,7 +6041,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-16T15:43:48.525Z",
       "slug": null,
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "wag_e_0b90e61f4d",
@@ -5875,7 +6070,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-15T10:13:51.429Z",
       "slug": null,
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "dy-mtcgttis-0",
@@ -5905,7 +6101,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-28T04:42:37.104Z",
       "slug": "dy-0",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "dy-mtcgttiv-1",
@@ -5935,7 +6132,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-28T04:42:37.104Z",
       "slug": "dy-1",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "dy-mtcgttiv-2",
@@ -5965,7 +6163,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-08-28T04:42:37.104Z",
       "slug": "dy-2",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "dy-mtcgttiv-3",
@@ -5995,7 +6194,8 @@
       "suggestion": "立即行动",
       "discoveredAt": "2026-08-28T04:42:37.104Z",
       "slug": "dy-3",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "dy-mtcgttiv-4",
@@ -6026,7 +6226,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-28T04:42:37.104Z",
       "slug": "dy-4",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "dy-mtcgttiv-5",
@@ -6057,7 +6258,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-28T04:42:37.104Z",
       "slug": "dy-5",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "dy-mtcgttiw-6",
@@ -6085,7 +6287,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-28T04:42:37.104Z",
       "slug": "dy-6",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "dy-mtcgttiw-7",
@@ -6115,7 +6318,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-28T04:42:37.104Z",
       "slug": "dy-7",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "dy-mtcgttiw-8",
@@ -6143,7 +6347,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-28T04:42:37.104Z",
       "slug": "dy-8",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "dy-mtcgttiw-10",
@@ -6171,7 +6376,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-28T04:42:37.104Z",
       "slug": "dy-10",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "dy-mtcgttiw-11",
@@ -6199,7 +6405,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-28T04:42:37.104Z",
       "slug": "dy-11",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "watcha-82",
@@ -6227,7 +6434,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-24T09:43:56.148Z",
       "slug": "activity-crJxNuK57EumTTTm",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "watcha-115",
@@ -6255,7 +6463,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-24T09:43:56.148Z",
       "slug": "activity-oAJKWjTsS606NHR4",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "watcha-98",
@@ -6283,7 +6492,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-24T09:43:56.148Z",
       "slug": "activity-s9SP3D4E3uNt9pCC",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "watcha-62",
@@ -6311,7 +6521,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-24T09:43:56.148Z",
       "slug": "activity-78",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "watcha-61",
@@ -6339,7 +6550,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-24T09:43:56.148Z",
       "slug": "activity-77",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "watcha-63",
@@ -6367,7 +6579,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-24T09:43:56.148Z",
       "slug": "activity-79",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "watcha-88",
@@ -6395,7 +6608,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-24T09:43:56.148Z",
       "slug": "activity-IuyDDGI8sZSHOxs3",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "watcha-52",
@@ -6423,7 +6637,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-24T09:43:56.148Z",
       "slug": "activity-68",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "watcha-110",
@@ -6451,7 +6666,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-24T09:43:56.148Z",
       "slug": "activity-m41zCdTnn5Yq6Vpr",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "watcha-75",
@@ -6479,7 +6695,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-24T09:43:56.148Z",
       "slug": "activity-PJzMdI6BLBVus36J",
-      "image": "path-prize-envelope.png"
+      "image": "path-prize-envelope.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "dy-suining-mtcgztci",
@@ -6510,7 +6727,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-08-28T04:47:16.818Z",
       "slug": "suining-aigc-song-2026",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "starletter-gamejam-0907",
@@ -6538,7 +6756,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-09T08:24:27.080756+00:00",
       "slug": "starletter-gamejam-0907",
-      "image": "event-pass-macro.png"
+      "image": "event-pass-macro.png",
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "search-20260909-01",
@@ -6565,7 +6784,8 @@
       "estimatedEffort": "",
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-09T00:00:00.000Z",
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "search-20260909-02",
@@ -6592,7 +6812,8 @@
       "estimatedEffort": "",
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-09T00:00:00.000Z",
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "search-20260909-03",
@@ -6619,7 +6840,8 @@
       "estimatedEffort": "",
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-09T00:00:00.000Z",
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "search-20260909-04",
@@ -6646,7 +6868,8 @@
       "estimatedEffort": "",
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-09T00:00:00.000Z",
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "search-20260909-05",
@@ -6673,7 +6896,8 @@
       "estimatedEffort": "",
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-09T00:00:00.000Z",
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "search-20260909-06",
@@ -6700,7 +6924,8 @@
       "estimatedEffort": "",
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-09T00:00:00.000Z",
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "search-20260909-07",
@@ -6727,7 +6952,8 @@
       "estimatedEffort": "",
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-09T00:00:00.000Z",
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "search-20260909-08",
@@ -6754,7 +6980,8 @@
       "estimatedEffort": "",
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-09T00:00:00.000Z",
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "search-20260909-09",
@@ -6781,7 +7008,8 @@
       "estimatedEffort": "",
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-09T00:00:00.000Z",
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "search-20260909-10",
@@ -6808,7 +7036,8 @@
       "estimatedEffort": "",
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-09T00:00:00.000Z",
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "search-20260909-11",
@@ -6835,7 +7064,8 @@
       "estimatedEffort": "",
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-09T00:00:00.000Z",
-      "slug": null
+      "slug": null,
+      "firstSeen": "2000-01-01"
     },
     {
       "id": "dy-scgz-jingrui",
@@ -6865,7 +7095,8 @@
       "suggestion": "值得参加",
       "discoveredAt": "2026-09-17T15:24:58.000Z",
       "slug": "dy-jingrui",
-      "image": "path-submission-stage.png"
+      "image": "path-submission-stage.png",
+      "firstSeen": "2000-01-01"
     }
   ]
 }
