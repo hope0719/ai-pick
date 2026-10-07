@@ -62,6 +62,19 @@ function stars(n){
   for(let i=0;i<5;i++) h += `<span class="${i<n?'filled':'empty'}">★</span>`;
   return `<span class="stars">${h}</span>`;
 }
+// 新活动标识：firstSeen 为 Asia/Shanghai 本地日历日，加入当天起 3 个自然日内显示右上角五角星
+function isNew(a){
+  if(!a.firstSeen) return false;
+  const d1 = new Date(a.firstSeen + 'T00:00:00+08:00').getTime();
+  if(isNaN(d1)) return false;
+  const t = new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()) + 'T00:00:00+08:00';
+  const diffDays = Math.floor((new Date(t).getTime() - d1) / 86400000);
+  return diffDays >= 0 && diffDays <= 2; // 加入当天 + 之后 2 天 = 共 3 天
+}
+function newStar(a){
+  if(!isNew(a)) return '';
+  return `<span class="new-star" aria-label="新活动" title="新活动 · 加入 3 天内"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="starGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="0.5" stop-color="#f5a623"/><stop offset="1" stop-color="#e07b00"/></linearGradient></defs><path d="M12 2l2.95 5.98 6.6.96-4.78 4.66 1.13 6.58L12 17.98 6.1 20.18l1.13-6.58L2.45 8.94l6.6-.96L12 2z" fill="url(#starGold)" stroke="#fff" stroke-width="0.6" stroke-linejoin="round"/></svg></span>`;
+}
 function rewardVal(a){
   const t = a.reward || '';
   const m = t.match(/[¥$]?\s*([\d,\.]+)\s*(万|亿|k|K|M|万|元|美元|RMB|CNY)?/);
@@ -156,7 +169,7 @@ function oppCard(a){
   const vendor = (a.vendor && a.vendor !== '其他' && a.vendor !== 'Unknown') ? esc(a.vendor) : '';
   const region = a.region ? esc(a.region) : '';
   const meta = [vendor, region].filter(Boolean).join(' · ');
-  return `<div class="opportunity-card">
+  return `<div class="opportunity-card${isNew(a) ? ' is-new' : ''}">
     <div class="card-body">
       <div class="card-main">
         <h3>${esc(stripTitleMoney(a.title))}</h3>
@@ -171,6 +184,7 @@ function oppCard(a){
         <a class="action-btn" href="${esc(a.url)}" target="_blank" rel="noopener">立即行动</a>
       </div>
     </div>
+    ${newStar(a)}
     ${deadlineBadge(a)}
   </div>`;
 }
@@ -187,11 +201,12 @@ function renderDeadline(){
     return dx - dy;
   }).slice(0,4);
   document.getElementById('deadlineGrid').innerHTML = list.length ? list.map(a=>`
-    <a class="deadline-card" href="${esc(a.url)}" target="_blank" rel="noopener">
+    <a class="deadline-card${isNew(a) ? ' is-new' : ''}" href="${esc(a.url)}" target="_blank" rel="noopener">
       <img class="dl-icon" src="${asset(a.image)}" alt="" loading="lazy"/>
       <div class="dl-body">
         <h3>${esc(stripTitleMoney(a.title))}</h3>
       </div>
+      ${newStar(a)}
       ${deadlineBadge(a)}
     </a>`).join('') : '<div class="empty-state">暂无即将截止的活动</div>';
 }

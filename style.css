@@ -161,6 +161,18 @@ main{padding:38px 0 60px}
 .deadline-badge.longterm{color:var(--muted);background:transparent;border:1px dashed var(--line-strong);box-shadow:none}
 .opportunity-card > .deadline-badge{top:108px;right:14px}
 
+/* 新活动标识：右上角大五角星（加入 3 天内显示） */
+.new-star{
+  position:absolute;top:8px;right:8px;width:46px;height:46px;z-index:6;
+  pointer-events:none;
+  filter:drop-shadow(0 2px 5px rgba(217,111,22,.45));
+  animation:starPop .35s ease-out;
+}
+.new-star svg{width:100%;height:100%;display:block}
+.opportunity-card.is-new .card-main h3{padding-right:54px}
+.deadline-card.is-new .dl-body h3{padding-right:54px}
+@keyframes starPop{0%{transform:scale(.4) rotate(-25deg);opacity:0}100%{transform:scale(1) rotate(0);opacity:1}}
+
 /* ---------- Filter ribbon ---------- */
 .smart-filter-ribbon{
   display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;

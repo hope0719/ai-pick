@@ -475,6 +475,25 @@ function main() {
   const merged = [...result, ...manualRecords];
   console.log(`ℹ 保留手工补录 ${manualRecords.length} 条（来源: ${[...new Set(manualRecords.map(a=>a.source||'?'))].join(', ') || '无'}）`);
 
+  // —— 新活动标识 firstSeen（前端右上角"3 天五角星"用）——
+  // 首次部署（已上线 data.json 尚无任何 firstSeen 字段）时，把所有现有活动 seeding 到远古日期，
+  //   避免一次性给全部历史活动打上"新"星；之后仅在现有活动集合里"新出现"的 id 才标记当天。
+  // 口径与 WaytoAGI 一致：以 Asia/Shanghai 本地日历日为准。
+  (function assignFirstSeen(){
+    const prevFS = {};
+    if (existing && existing.activities) {
+      for (const a of existing.activities) if (a.id && a.firstSeen) prevFS[a.id] = a.firstSeen;
+    }
+    const firstDeploy = !!(existing && existing.activities && existing.activities.length &&
+      existing.activities.every(a => !a.firstSeen));
+    const SEED_PAST = '2000-01-01';
+    const todayStr = todayCN(); // YYYY-MM-DD（Asia/Shanghai）
+    for (const a of merged) {
+      if (a.firstSeen) continue;              // 已有值（如手工补录沿用）保持
+      a.firstSeen = firstDeploy ? SEED_PAST : (prevFS[a.id] || todayStr);
+    }
+  })();
+
   const data = {
     site_name: 'AI 活动雷达',
     tagline: '在时间截止前找到 AI 机会',
