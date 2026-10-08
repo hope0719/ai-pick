@@ -1,7 +1,7 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-10-07T14:57:26.423Z",
+  "updated_at": "2026-10-08T02:50:23.961Z",
   "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」+ events.waytoagi.com 三源合并 + 手工补录 35 条",
   "activities": [
     {
@@ -5986,6 +5986,35 @@
       "discoveredAt": "2026-08-26T05:13:05.347Z",
       "slug": null,
       "firstSeen": "2000-01-01"
+    },
+    {
+      "id": "wag_e_0eefae53c8",
+      "title": "2026金鸡电影AI单元征片启动",
+      "vendor": "WaytoAGI",
+      "type": "社区活动",
+      "score": 0,
+      "difficulty": null,
+      "difficultyNote": null,
+      "reward": "",
+      "rewardDetail": "标签：金鸡奖 / AI电影 / AIGC / 短片征集 / 极客松 / 影像艺术",
+      "rewardTypes": [],
+      "format": "线下",
+      "participation": "站外链接报名；线下 · 厦门 · 主办 WaytoAGI",
+      "winningCriteria": null,
+      "timelineNotes": null,
+      "startAt": "2026-10-20",
+      "endAt": "2026-10-20T23:59:59+08:00",
+      "deadline_date": "2026-10-20",
+      "region": "中国",
+      "officialStatus": "官方确认",
+      "url": "https://www.larkoffice.com/share/base/form/shrcnTSQde63cRIJ6lidg2Xwl6c?ccm_open_type=form_v2_qrcode_share_submit&refer_user_id=075c403c0d4776c10de9310b73120cc4cf1686f9",
+      "source": "waytoagi",
+      "estimatedEffort": null,
+      "suggestion": "值得参加",
+      "discoveredAt": "2026-10-07T15:56:42.406Z",
+      "slug": null,
+      "image": "event-pass-macro.png",
+      "firstSeen": "2026-10-08"
     },
     {
       "id": "wag_e_e1b0a85d26",
