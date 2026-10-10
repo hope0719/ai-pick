@@ -1,7 +1,7 @@
 {
   "site_name": "AI 活动雷达",
   "tagline": "在时间截止前找到 AI 机会",
-  "updated_at": "2026-10-09T01:26:49.488Z",
+  "updated_at": "2026-10-10T02:52:27.870Z",
   "source": "JS-banana/ai-opportunity-radar (airadar.laifuyou.com) + LucianaiB 飞书表「AI 活动推荐」+ events.waytoagi.com 三源合并 + 手工补录 35 条",
   "activities": [
     {
@@ -6186,6 +6186,35 @@
       "slug": null,
       "image": "event-pass-macro.png",
       "firstSeen": "2000-01-01"
+    },
+    {
+      "id": "wag_e_89ab88a7df",
+      "title": "麦当劳程序员创意开发大赛",
+      "vendor": "麦当劳 × WorkBuddy",
+      "type": "黑客松",
+      "score": 0,
+      "difficulty": null,
+      "difficultyNote": null,
+      "reward": "",
+      "rewardDetail": "标签：麦当劳 / WorkBuddy / 程序员节 / 创意开发 / MCP / 1024",
+      "rewardTypes": [],
+      "format": "线上",
+      "participation": "站外链接报名；线上 · 主办 麦当劳 × WorkBuddy",
+      "winningCriteria": null,
+      "timelineNotes": null,
+      "startAt": "2026-10-09",
+      "endAt": "2026-10-25T23:59:59+08:00",
+      "deadline_date": "2026-10-25",
+      "region": "中国",
+      "officialStatus": "官方确认",
+      "url": "https://github.com/M-China-Official/mcd-developer-innovation-challenge",
+      "source": "waytoagi",
+      "estimatedEffort": null,
+      "suggestion": "值得参加",
+      "discoveredAt": "2026-10-09T08:10:18.414Z",
+      "slug": null,
+      "image": "event-pass-macro.png",
+      "firstSeen": "2026-10-10"
     },
     {
       "id": "dy-mtcgttis-0",
